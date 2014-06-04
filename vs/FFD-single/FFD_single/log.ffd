@@ -1,0 +1,5 @@
+Start the FFD simulation
+ERROR in read_parameter(): Could not open the default FFD parameter file input.ffd
+ERROR in initialize(): Failed to read paramter file.
+ERROR in ffd(): Could not initialize simulation parameters.
+ERROR in main(): simulation failed
