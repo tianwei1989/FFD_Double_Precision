@@ -11,7 +11,7 @@
 /// \date   8/3/2013
 ///
 ///////////////////////////////////////////////////////////////////////////////
-
+#define REAL double
 typedef struct {
   int flag; // Flag for cosimulation: 0-> Stop; 1->Continue
   int ffdError; // 1: FFD exits with an error

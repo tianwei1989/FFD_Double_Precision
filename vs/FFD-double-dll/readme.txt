@@ -1,0 +1,1 @@
+In this folder, just FFD is run in double precision. For other parts of coupled simulation, nothing changes compared to the coupled simulation of single precision. According to the test it has the same results with that of coupled simualtion of sigle precision.

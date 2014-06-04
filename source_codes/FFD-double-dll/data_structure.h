@@ -61,8 +61,6 @@ Place the stdlib.h line above the glut.h line in the code.
 #define FOR_JK for(j=1; j<=jmax; j++) { for(k=1; k<=kmax; k++) {{
 #define END_FOR }}}
 
-#define REAL double
-
 #define SMALL 0.00001
 
 #ifndef max

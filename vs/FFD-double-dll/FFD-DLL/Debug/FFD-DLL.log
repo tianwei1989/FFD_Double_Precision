@@ -1,0 +1,42 @@
+﻿Build started 6/4/2014 6:58:28 PM.
+     1>Project "C:\Users\Wei_Tian\Documents\GitHub\FFD_double_precision\FFD_Double_Precision\vs\FFD-double-dll\FFD-DLL\FFD-DLL.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\FFD-DLL.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Wei_Tian\Documents\GitHub\FFD_double_precision\FFD_Double_Precision\vs\FFD-double-dll\FFD-DLL\Debug\FFD-DLL.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\FFD-DLL.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Wei_Tian\Documents\GitHub\FFD_double_precision\FFD_Double_Precision\vs\FFD-double-dll\FFD-DLL\Debug\FFD-DLL.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Wei_Tian\Documents\GitHub\FFD_double_precision\FFD_Double_Precision\vs\FFD-double-dll\FFD-DLL\Debug\FFD-DLL.lib" /MACHINE:X86 /DLL Debug\advection.obj
+         Debug\boundary.obj
+         Debug\chen_zero_equ_model.obj
+         Debug\cosimulation.obj
+         Debug\data_writer.obj
+         Debug\diffusion.obj
+         Debug\ffd.obj
+         Debug\ffd_data_reader.obj
+         Debug\ffd_dll.obj
+         Debug\geometry.obj
+         Debug\initialization.obj
+         Debug\interpolation.obj
+         Debug\main.obj
+         Debug\parameter_reader.obj
+         Debug\projection.obj
+         Debug\sci_reader.obj
+         Debug\solver.obj
+         Debug\solver_gs.obj
+         Debug\solver_tdma.obj
+         Debug\timing.obj
+         Debug\utility.obj
+         Debug\visualization.obj
+     1>advection.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+            Creating library C:\Users\Wei_Tian\Documents\GitHub\FFD_double_precision\FFD_Double_Precision\vs\FFD-double-dll\FFD-DLL\Debug\FFD-DLL.lib and object C:\Users\Wei_Tian\Documents\GitHub\FFD_double_precision\FFD_Double_Precision\vs\FFD-double-dll\FFD-DLL\Debug\FFD-DLL.exp
+         FFD-DLL.vcxproj -> C:\Users\Wei_Tian\Documents\GitHub\FFD_double_precision\FFD_Double_Precision\vs\FFD-double-dll\FFD-DLL\Debug\FFD-DLL.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Wei_Tian\Documents\GitHub\FFD_double_precision\FFD_Double_Precision\vs\FFD-double-dll\FFD-DLL\Debug\FFD-DLL.dll;#2" /manifest "Debug\FFD-DLL.dll.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\FFD-DLL.unsuccessfulbuild".
+         Touching "Debug\FFD-DLL.lastbuildstate".
+     1>Done Building Project "C:\Users\Wei_Tian\Documents\GitHub\FFD_double_precision\FFD_Double_Precision\vs\FFD-double-dll\FFD-DLL\FFD-DLL.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.67

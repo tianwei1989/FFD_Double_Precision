@@ -573,7 +573,8 @@ int compare_boundary_names(PARA_DATA *para) {
 ///////////////////////////////////////////////////////////////////////////////
 int compare_boundary_area(PARA_DATA *para, REAL **var, int **BINDEX) {
   int i, j;
-  REAL *A0 = para->bc->AWall, *A1 = para->cosim->para->are;
+  REAL *A0 = para->bc->AWall;
+  float *A1 = para->cosim->para->are;
 
   ffd_log("compare_boundary_area(): "
           "Start to compare the area of solid surfaces.",
