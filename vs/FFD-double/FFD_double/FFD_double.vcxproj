@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6724B5A-896C-45E9-B2D2-84C78B8A9755}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FFD_double</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source_codes\FFD_double\advection.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\boundary.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\chen_zero_equ_model.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\cosimulation.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\data_structure.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\data_writer.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\diffusion.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\ffd.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\ffd_data_reader.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\ffd_dll.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\geometry.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\glut.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\initialization.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\interpolation.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\main.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\modelica_ffd_common.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\parameter_reader.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\projection.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\sci_reader.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\solver.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\solver_gs.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\solver_tdma.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\timing.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\utility.h" />
+    <ClInclude Include="..\..\..\source_codes\FFD_double\visualization.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source_codes\FFD_double\advection.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\boundary.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\chen_zero_equ_model.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\cosimulation.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\data_writer.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\diffusion.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\ffd.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\ffd_data_reader.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\ffd_dll.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\geometry.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\initialization.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\interpolation.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\main.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\parameter_reader.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\projection.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\sci_reader.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\solver.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\solver_gs.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\solver_tdma.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\timing.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\utility.c" />
+    <ClCompile Include="..\..\..\source_codes\FFD_double\visualization.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
