@@ -1,0 +1,3300 @@
+Start Fast Fluid Dynamics Simulation with Thread ID 7265840
+fileName="Resources/Data/Rooms/FFD/MixedConvection.ffd"
+read_parameter(): Opened file Resources/Data/Rooms/FFD/MixedConvection.ffd for FFD parameters
+assign_parameter(): inpu.parameter_file_format=SCI
+assign_parameter(): inpu.parameter_file_name=Resources/Data/Rooms/FFD/MixedConvection.cfd
+assign_parameter(): inpu.block_file_name=Resources/Data/Rooms/FFD/MixedConvection.dat
+assign_parameter(): geom.Lx=1.000000
+assign_parameter(): geom.Ly=1.000000
+assign_parameter(): geom.Lz=1.000000
+assign_parameter(): geom.imax=10
+assign_parameter(): geom.jmax=10
+assign_parameter(): geom.kmax=10
+assign_parameter(): geom.index=600
+assign_parameter(): inpu.read_old_ffd_file=0
+assign_parameter(): geom.dx=0.100000
+assign_parameter(): geom.dy=0.100000
+assign_parameter(): geom.dz=0.100000
+assign_parameter(): geom.uniform=1
+assign_parameter(): outp.cal_mean=1
+assign_parameter(): outp.v_ref=0.100000
+assign_parameter(): outp.Temp_ref=10.000000
+assign_parameter(): outp.v_length=0.000001
+assign_parameter(): outp.i_N=1
+assign_parameter(): outp.j_N=1
+assign_parameter(): outp.winx=600
+assign_parameter(): outp.winy=600
+assign_parameter(): outp.version=RUN
+assign_parameter(): prob.nu=0.000015
+assign_parameter(): prob.rho=1.205000
+assign_parameter(): prob.gravx=0.000000
+assign_parameter(): prob.gravy=0.000000
+assign_parameter(): prob.gravz=-9.810000
+assign_parameter(): prob.cond=0.025700
+assign_parameter(): prob.Cp=1005.000000
+assign_parameter(): prob.beta=0.003430
+assign_parameter(): prob.diff=0.000010
+assign_parameter(): prob.coeff_h=0.000400
+assign_parameter(): prob.force=1.000000
+assign_parameter(): prob.source=1.000000
+assign_parameter(): prob.movie=0
+assign_parameter(): prob.tur_model=LAM
+assign_parameter(): prob.chen_a=0.038740
+assign_parameter(): prob.Prt=0.900000
+assign_parameter(): prob.Temp_Buoyancy=10.000000
+assign_parameter(): mytime.t_steady=100.000000
+assign_parameter(): bc.nb_Xi=1
+assign_parameter(): solv.solver=GS
+assign_parameter(): solv.check_residual=0
+assign_parameter(): solv.advection_solver=SEMI
+assign_parameter(): solv.interpolation=BILINEAR
+assign_parameter(): solv.cosimulation=1
+assign_parameter(): sensor.nb_sensor=2
+assign_parameter(): sensor.name=OccupiedZoneAirTemperature
+assign_parameter(): sensor.name=Velocity
+assign_parameter(): init.T=10.000000
+assign_parameter(): init.u=0.000000
+assign_parameter(): init.v=0.000000
+assign_parameter(): init.w=0.000000
+read_sci_input(): Start to read sci input file Resources/Data/Rooms/FFD/MixedConvection.cfd
+read_sci_input(): para->bc->nb_bc=8
+read_sci_input(): para->bc->nb_inlet=1
+read_sci_input(): para->bc->inletName[0]=Inlet
+read_sci_input(): VX=0.000000, VY=0.000000, VZ=0.000000, T=0.000000, Xi=0.000000
+read_sci_input(): para->bc->nb_outlet=1
+read_sci_input(): para->bc->outletName[0]=Outlet
+read_sci_input(): VX=0.000000, VY=0.000000, VX=0.000000, T=0.000000, Xi=0.000000
+read_sci_input(): Port[0]:Inlet
+read_sci_input(): Port[1]:Outlet
+read_sci_input(): para->bc->nb_block=0
+read_sci_input(): para->bc->nb_wall=6
+read_sci_input(): para->bc->wallName[0]="West Wall"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[1]="East Wall"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[2]="South Wall"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[3]="North Wall"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[4]="Ceiling"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[5]="Floor"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->nb_source=0
+read_sci_input(): para->mytime->t_start=0
+read_sci_input(): para->mytime->dt=0.100000
+read_sci_input(): para->mytime->step_total=1000
+read_sci_input(): Read sci input file Resources/Data/Rooms/FFD/MixedConvection.cfd
+read_sci_input(): start to read block information from "Resources/Data/Rooms/FFD/MixedConvection.dat".
+read_sci_input(): end of reading zeroone.dat.
+bounary_area(): Calculated surface area for FFD boundaryies are:
+	Wall boundaries:
+		West Wall: 0.900000[m2]
+		East Wall: 0.900000[m2]
+		South Wall: 1.000000[m2]
+		North Wall: 1.000000[m2]
+		Ceiling: 1.000000[m2]
+		Floor: 1.000000[m2]
+	Inlet boundaries:
+		Inlet: 0.100000[m2]
+	Outlet boundaries:
+		Outlet: 0.100000[m2]
+-------------------------------------------------------------------
+read_cosim_parameter(): Received the following cosimulation parameters:
+	nSur=6
+	nPorts=2
+	nSen=2
+	nXi=1
+	nC=0
+	nConExtWin=1
+	sha=0
+	Surface 0: East Wall
+		Area:0.900000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed tempearture
+	Surface 1: West Wall
+		Area:0.900000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed tempearture
+	Surface 2: North Wall
+		Area:1.000000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed tempearture
+	Surface 3: South Wall
+		Area:1.000000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed tempearture
+	Surface 4: Ceiling
+		Area:1.000000[m2],	 Tilt:0.000000[deg]
+		Thermal boundary: Fixed tempearture
+	Surface 5: Floor
+		Area:1.000000[m2],	 Tilt:3.141593[deg]
+		Thermal boundary: Fixed tempearture
+	Fluid Ports 0: Inlet
+	Fluid Ports 1: Outlet
+	Sensor 0: Occupied zone air temperature
+	Sensor 1: Velocity
+compare_boundary_names(): Matched boundary name "East Wall".
+compare_boundary_names(): Matched boundary name "West Wall".
+compare_boundary_names(): Matched boundary name "North Wall".
+compare_boundary_names(): Matched boundary name "South Wall".
+compare_boundary_names(): Matched boundary name "Ceiling".
+compare_boundary_names(): Matched boundary name "Floor".
+Start to compare port names
+	Modelica: port[0]=Inlet
+	FFD: port[0]=Inlet
+compare_boundary_names(): Matched boundary name "Inlet".
+	Modelica: port[1]=Outlet
+	FFD: port[0]=Inlet
+	FFD: port[1]=Outlet
+compare_boundary_names(): Matched boundary name "Outlet".
+compare_boundary_area(): Start to compare the area of solid surfaces.
+	West Wall has the same area of 0.900000[m2]
+	East Wall has the same area of 0.900000[m2]
+	South Wall has the same area of 1.000000[m2]
+	North Wall has the same area of 1.000000[m2]
+	Ceiling has the same area of 1.000000[m2]
+	Floor has the same area of 1.000000[m2]
+read_cosim_parameter(): Simulation starts at 0.000000s
+read_cosim_parameter(): Overwrite the density of air 1.205000 kg/m3 with 1.200000 kg/m3
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=0.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=0.000000[s]
+	Averaged room temperature 10.020529[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=283.355315
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 0.188393[W]
+		East Wall: 0.000000[W]
+		South Wall: 0.188484[W]
+		North Wall: 0.188450[W]
+		Ceiling: 0.000000[W]
+		Floor: -248.160255[W]
+	Sensor Information:
+		Occupied zone air temperature: 283.170529
+		Velocity: 0.000118
+ffd.c: Start FFD solver.
+Physical time=0.1000 s, CPU time=0.1850 s, Time Ratio=0.5405
+Physical time=0.2000 s, CPU time=0.2310 s, Time Ratio=0.8658
+Physical time=0.3000 s, CPU time=0.2770 s, Time Ratio=1.0830
+Physical time=0.4000 s, CPU time=0.3230 s, Time Ratio=1.2384
+Physical time=0.5000 s, CPU time=0.3690 s, Time Ratio=1.3550
+Physical time=0.6000 s, CPU time=0.4160 s, Time Ratio=1.4423
+Physical time=0.7000 s, CPU time=0.4650 s, Time Ratio=1.5054
+Physical time=0.8000 s, CPU time=0.5120 s, Time Ratio=1.5625
+Physical time=0.9000 s, CPU time=0.5580 s, Time Ratio=1.6129
+Physical time=1.0000 s, CPU time=0.6110 s, Time Ratio=1.6367
+Physical time=1.1000 s, CPU time=0.6570 s, Time Ratio=1.6743
+Physical time=1.2000 s, CPU time=0.7110 s, Time Ratio=1.6878
+Physical time=1.3000 s, CPU time=0.7610 s, Time Ratio=1.7083
+Physical time=1.4000 s, CPU time=0.8070 s, Time Ratio=1.7348
+Physical time=1.5000 s, CPU time=0.8530 s, Time Ratio=1.7585
+Physical time=1.6000 s, CPU time=0.8990 s, Time Ratio=1.7798
+Physical time=1.7000 s, CPU time=0.9460 s, Time Ratio=1.7970
+Physical time=1.8000 s, CPU time=0.9920 s, Time Ratio=1.8145
+Physical time=1.9000 s, CPU time=1.0400 s, Time Ratio=1.8269
+Physical time=2.0000 s, CPU time=1.0850 s, Time Ratio=1.8433
+Physical time=2.1000 s, CPU time=1.1310 s, Time Ratio=1.8568
+Physical time=2.2000 s, CPU time=1.1780 s, Time Ratio=1.8676
+Physical time=2.3000 s, CPU time=1.2240 s, Time Ratio=1.8791
+Physical time=2.4000 s, CPU time=1.2700 s, Time Ratio=1.8898
+Physical time=2.5000 s, CPU time=1.3160 s, Time Ratio=1.8997
+Physical time=2.6000 s, CPU time=1.3620 s, Time Ratio=1.9090
+Physical time=2.7000 s, CPU time=1.4600 s, Time Ratio=1.8493
+Physical time=2.8000 s, CPU time=1.5070 s, Time Ratio=1.8580
+Physical time=2.9000 s, CPU time=1.5530 s, Time Ratio=1.8674
+Physical time=3.0000 s, CPU time=1.5990 s, Time Ratio=1.8762
+Physical time=3.1000 s, CPU time=1.6460 s, Time Ratio=1.8834
+Physical time=3.2000 s, CPU time=1.6920 s, Time Ratio=1.8913
+Physical time=3.3000 s, CPU time=1.7380 s, Time Ratio=1.8987
+Physical time=3.4000 s, CPU time=1.7850 s, Time Ratio=1.9048
+Physical time=3.5000 s, CPU time=1.8310 s, Time Ratio=1.9115
+Physical time=3.6000 s, CPU time=1.8770 s, Time Ratio=1.9180
+Physical time=3.7000 s, CPU time=1.9230 s, Time Ratio=1.9241
+Physical time=3.8000 s, CPU time=1.9690 s, Time Ratio=1.9299
+Physical time=3.9000 s, CPU time=2.0160 s, Time Ratio=1.9345
+Physical time=4.0000 s, CPU time=2.0620 s, Time Ratio=1.9399
+Physical time=4.1000 s, CPU time=2.1080 s, Time Ratio=1.9450
+Physical time=4.2000 s, CPU time=2.1550 s, Time Ratio=1.9490
+Physical time=4.3000 s, CPU time=2.2020 s, Time Ratio=1.9528
+Physical time=4.4000 s, CPU time=2.2480 s, Time Ratio=1.9573
+Physical time=4.5000 s, CPU time=2.2950 s, Time Ratio=1.9608
+Physical time=4.6000 s, CPU time=2.3410 s, Time Ratio=1.9650
+Physical time=4.7000 s, CPU time=2.3870 s, Time Ratio=1.9690
+Physical time=4.8000 s, CPU time=2.4340 s, Time Ratio=1.9721
+Physical time=4.9000 s, CPU time=2.4800 s, Time Ratio=1.9758
+Physical time=5.0000 s, CPU time=2.5260 s, Time Ratio=1.9794
+Physical time=5.1000 s, CPU time=2.5720 s, Time Ratio=1.9829
+Physical time=5.2000 s, CPU time=2.6190 s, Time Ratio=1.9855
+Physical time=5.3000 s, CPU time=2.6650 s, Time Ratio=1.9887
+Physical time=5.4000 s, CPU time=2.7120 s, Time Ratio=1.9912
+Physical time=5.5000 s, CPU time=2.7590 s, Time Ratio=1.9935
+Physical time=5.6000 s, CPU time=2.8050 s, Time Ratio=1.9964
+Physical time=5.7000 s, CPU time=2.8510 s, Time Ratio=1.9993
+Physical time=5.8000 s, CPU time=2.8970 s, Time Ratio=2.0021
+Physical time=5.9000 s, CPU time=2.9440 s, Time Ratio=2.0041
+Physical time=6.0000 s, CPU time=2.9900 s, Time Ratio=2.0067
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=6.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=6.000000[s]
+	Averaged room temperature 10.117642[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=284.018339
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 1.942280[W]
+		East Wall: 0.000006[W]
+		South Wall: 1.294786[W]
+		North Wall: 1.363338[W]
+		Ceiling: 0.000000[W]
+		Floor: -80.697444[W]
+	Sensor Information:
+		Occupied zone air temperature: 283.267642
+		Velocity: 0.124496
+ffd_solver(): Synchronized data at t=6.000000[s]
+
+Physical time=6.1000 s, CPU time=3.0550 s, Time Ratio=1.9967
+Physical time=6.2000 s, CPU time=3.1170 s, Time Ratio=1.9891
+Physical time=6.3000 s, CPU time=3.1630 s, Time Ratio=1.9918
+Physical time=6.4000 s, CPU time=3.2100 s, Time Ratio=1.9938
+Physical time=6.5000 s, CPU time=3.2570 s, Time Ratio=1.9957
+Physical time=6.6000 s, CPU time=3.3030 s, Time Ratio=1.9982
+Physical time=6.7000 s, CPU time=3.3500 s, Time Ratio=2.0000
+Physical time=6.8000 s, CPU time=3.3960 s, Time Ratio=2.0024
+Physical time=6.9000 s, CPU time=3.4430 s, Time Ratio=2.0041
+Physical time=7.0000 s, CPU time=3.4890 s, Time Ratio=2.0063
+Physical time=7.1000 s, CPU time=3.5360 s, Time Ratio=2.0079
+Physical time=7.2000 s, CPU time=3.5820 s, Time Ratio=2.0101
+Physical time=7.3000 s, CPU time=3.6280 s, Time Ratio=2.0121
+Physical time=7.4000 s, CPU time=3.6740 s, Time Ratio=2.0142
+Physical time=7.5000 s, CPU time=3.7210 s, Time Ratio=2.0156
+Physical time=7.6000 s, CPU time=3.7670 s, Time Ratio=2.0175
+Physical time=7.7000 s, CPU time=3.8130 s, Time Ratio=2.0194
+Physical time=7.8000 s, CPU time=3.8590 s, Time Ratio=2.0212
+Physical time=7.9000 s, CPU time=3.9050 s, Time Ratio=2.0230
+Physical time=8.0000 s, CPU time=3.9520 s, Time Ratio=2.0243
+Physical time=8.1000 s, CPU time=4.0000 s, Time Ratio=2.0250
+Physical time=8.2000 s, CPU time=4.0460 s, Time Ratio=2.0267
+Physical time=8.3000 s, CPU time=4.0930 s, Time Ratio=2.0279
+Physical time=8.4000 s, CPU time=4.1400 s, Time Ratio=2.0290
+Physical time=8.5000 s, CPU time=4.1860 s, Time Ratio=2.0306
+Physical time=8.6000 s, CPU time=4.2340 s, Time Ratio=2.0312
+Physical time=8.7000 s, CPU time=4.2800 s, Time Ratio=2.0327
+Physical time=8.8000 s, CPU time=4.3270 s, Time Ratio=2.0337
+Physical time=8.9000 s, CPU time=4.3730 s, Time Ratio=2.0352
+Physical time=9.0000 s, CPU time=4.4190 s, Time Ratio=2.0367
+Physical time=9.1000 s, CPU time=4.4650 s, Time Ratio=2.0381
+Physical time=9.2000 s, CPU time=4.5120 s, Time Ratio=2.0390
+Physical time=9.3000 s, CPU time=4.5590 s, Time Ratio=2.0399
+Physical time=9.4000 s, CPU time=4.6050 s, Time Ratio=2.0413
+Physical time=9.5000 s, CPU time=4.6510 s, Time Ratio=2.0426
+Physical time=9.6000 s, CPU time=4.6980 s, Time Ratio=2.0434
+Physical time=9.7000 s, CPU time=4.7440 s, Time Ratio=2.0447
+Physical time=9.8000 s, CPU time=4.7900 s, Time Ratio=2.0459
+Physical time=9.9000 s, CPU time=4.8370 s, Time Ratio=2.0467
+Physical time=10.0000 s, CPU time=4.8830 s, Time Ratio=2.0479
+Physical time=10.1000 s, CPU time=4.9290 s, Time Ratio=2.0491
+Physical time=10.2000 s, CPU time=4.9760 s, Time Ratio=2.0498
+Physical time=10.3000 s, CPU time=5.0220 s, Time Ratio=2.0510
+Physical time=10.4000 s, CPU time=5.0690 s, Time Ratio=2.0517
+Physical time=10.5000 s, CPU time=5.1170 s, Time Ratio=2.0520
+Physical time=10.6000 s, CPU time=5.1640 s, Time Ratio=2.0527
+Physical time=10.7000 s, CPU time=5.2100 s, Time Ratio=2.0537
+Physical time=10.8000 s, CPU time=5.2570 s, Time Ratio=2.0544
+Physical time=10.9000 s, CPU time=5.3040 s, Time Ratio=2.0551
+Physical time=11.0000 s, CPU time=5.3500 s, Time Ratio=2.0561
+Physical time=11.1000 s, CPU time=5.3970 s, Time Ratio=2.0567
+Physical time=11.2000 s, CPU time=5.4430 s, Time Ratio=2.0577
+Physical time=11.3000 s, CPU time=5.4890 s, Time Ratio=2.0587
+Physical time=11.4000 s, CPU time=5.5360 s, Time Ratio=2.0592
+Physical time=11.5000 s, CPU time=5.5820 s, Time Ratio=2.0602
+Physical time=11.6000 s, CPU time=5.6300 s, Time Ratio=2.0604
+Physical time=11.7000 s, CPU time=5.6760 s, Time Ratio=2.0613
+Physical time=11.8000 s, CPU time=5.7230 s, Time Ratio=2.0619
+Physical time=11.9000 s, CPU time=5.7690 s, Time Ratio=2.0627
+Physical time=12.0000 s, CPU time=5.8150 s, Time Ratio=2.0636
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=12.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=12.000000[s]
+	Averaged room temperature 10.277906[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=283.952269
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 8.421485[W]
+		East Wall: 0.062146[W]
+		South Wall: 7.290668[W]
+		North Wall: 7.603246[W]
+		Ceiling: 0.000016[W]
+		Floor: -72.653313[W]
+	Sensor Information:
+		Occupied zone air temperature: 283.427906
+		Velocity: 0.028805
+ffd_solver(): Synchronized data at t=12.000000[s]
+
+Physical time=12.1000 s, CPU time=5.8800 s, Time Ratio=2.0578
+Physical time=12.2000 s, CPU time=5.9260 s, Time Ratio=2.0587
+Physical time=12.3000 s, CPU time=5.9730 s, Time Ratio=2.0593
+Physical time=12.4000 s, CPU time=6.0190 s, Time Ratio=2.0601
+Physical time=12.5000 s, CPU time=6.0660 s, Time Ratio=2.0607
+Physical time=12.6000 s, CPU time=6.1130 s, Time Ratio=2.0612
+Physical time=12.7000 s, CPU time=6.1590 s, Time Ratio=2.0620
+Physical time=12.8000 s, CPU time=6.2060 s, Time Ratio=2.0625
+Physical time=12.9000 s, CPU time=6.2520 s, Time Ratio=2.0633
+Physical time=13.0000 s, CPU time=6.2990 s, Time Ratio=2.0638
+Physical time=13.1000 s, CPU time=6.3460 s, Time Ratio=2.0643
+Physical time=13.2000 s, CPU time=6.3920 s, Time Ratio=2.0651
+Physical time=13.3000 s, CPU time=6.4390 s, Time Ratio=2.0655
+Physical time=13.4000 s, CPU time=6.4850 s, Time Ratio=2.0663
+Physical time=13.5000 s, CPU time=6.5330 s, Time Ratio=2.0664
+Physical time=13.6000 s, CPU time=6.5800 s, Time Ratio=2.0669
+Physical time=13.7000 s, CPU time=6.6280 s, Time Ratio=2.0670
+Physical time=13.8000 s, CPU time=6.6740 s, Time Ratio=2.0677
+Physical time=13.9000 s, CPU time=6.7210 s, Time Ratio=2.0681
+Physical time=14.0000 s, CPU time=6.7680 s, Time Ratio=2.0686
+Physical time=14.1000 s, CPU time=6.8140 s, Time Ratio=2.0693
+Physical time=14.2000 s, CPU time=6.8610 s, Time Ratio=2.0697
+Physical time=14.3000 s, CPU time=6.9080 s, Time Ratio=2.0701
+Physical time=14.4000 s, CPU time=6.9630 s, Time Ratio=2.0681
+Physical time=14.5000 s, CPU time=7.0130 s, Time Ratio=2.0676
+Physical time=14.6000 s, CPU time=7.0590 s, Time Ratio=2.0683
+Physical time=14.7000 s, CPU time=7.1060 s, Time Ratio=2.0687
+Physical time=14.8000 s, CPU time=7.1520 s, Time Ratio=2.0694
+Physical time=14.9000 s, CPU time=7.1990 s, Time Ratio=2.0697
+Physical time=15.0000 s, CPU time=7.2450 s, Time Ratio=2.0704
+Physical time=15.1000 s, CPU time=7.2920 s, Time Ratio=2.0708
+Physical time=15.2000 s, CPU time=7.3390 s, Time Ratio=2.0711
+Physical time=15.3000 s, CPU time=7.3850 s, Time Ratio=2.0718
+Physical time=15.4000 s, CPU time=7.4310 s, Time Ratio=2.0724
+Physical time=15.5000 s, CPU time=7.4780 s, Time Ratio=2.0727
+Physical time=15.6000 s, CPU time=7.5250 s, Time Ratio=2.0731
+Physical time=15.7000 s, CPU time=7.5710 s, Time Ratio=2.0737
+Physical time=15.8000 s, CPU time=7.6170 s, Time Ratio=2.0743
+Physical time=15.9000 s, CPU time=7.6640 s, Time Ratio=2.0746
+Physical time=16.0000 s, CPU time=7.7100 s, Time Ratio=2.0752
+Physical time=16.1000 s, CPU time=7.7560 s, Time Ratio=2.0758
+Physical time=16.2000 s, CPU time=7.8030 s, Time Ratio=2.0761
+Physical time=16.3000 s, CPU time=7.8490 s, Time Ratio=2.0767
+Physical time=16.4000 s, CPU time=7.8960 s, Time Ratio=2.0770
+Physical time=16.5000 s, CPU time=7.9420 s, Time Ratio=2.0776
+Physical time=16.6000 s, CPU time=7.9890 s, Time Ratio=2.0779
+Physical time=16.7000 s, CPU time=8.0360 s, Time Ratio=2.0781
+Physical time=16.8000 s, CPU time=8.0820 s, Time Ratio=2.0787
+Physical time=16.9000 s, CPU time=8.1290 s, Time Ratio=2.0790
+Physical time=17.0000 s, CPU time=8.1750 s, Time Ratio=2.0795
+Physical time=17.1000 s, CPU time=8.2220 s, Time Ratio=2.0798
+Physical time=17.2000 s, CPU time=8.2690 s, Time Ratio=2.0801
+Physical time=17.3000 s, CPU time=8.3150 s, Time Ratio=2.0806
+Physical time=17.4000 s, CPU time=8.3620 s, Time Ratio=2.0808
+Physical time=17.5000 s, CPU time=8.4090 s, Time Ratio=2.0811
+Physical time=17.6000 s, CPU time=8.4550 s, Time Ratio=2.0816
+Physical time=17.7000 s, CPU time=8.5020 s, Time Ratio=2.0819
+Physical time=17.8000 s, CPU time=8.5490 s, Time Ratio=2.0821
+Physical time=17.9000 s, CPU time=8.5950 s, Time Ratio=2.0826
+Physical time=18.0000 s, CPU time=8.6420 s, Time Ratio=2.0829
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=18.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=18.000000[s]
+	Averaged room temperature 10.600832[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=284.335291
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 8.310173[W]
+		East Wall: 0.234264[W]
+		South Wall: 6.610910[W]
+		North Wall: 7.039108[W]
+		Ceiling: 0.001738[W]
+		Floor: -72.512886[W]
+	Sensor Information:
+		Occupied zone air temperature: 283.750832
+		Velocity: 0.093483
+ffd_solver(): Synchronized data at t=18.000000[s]
+
+Physical time=18.1000 s, CPU time=8.7060 s, Time Ratio=2.0790
+Physical time=18.2000 s, CPU time=8.7520 s, Time Ratio=2.0795
+Physical time=18.3000 s, CPU time=8.7990 s, Time Ratio=2.0798
+Physical time=18.4000 s, CPU time=8.8450 s, Time Ratio=2.0803
+Physical time=18.5000 s, CPU time=8.8920 s, Time Ratio=2.0805
+Physical time=18.6000 s, CPU time=8.9380 s, Time Ratio=2.0810
+Physical time=18.7000 s, CPU time=8.9850 s, Time Ratio=2.0812
+Physical time=18.8000 s, CPU time=9.0320 s, Time Ratio=2.0815
+Physical time=18.9000 s, CPU time=9.0790 s, Time Ratio=2.0817
+Physical time=19.0000 s, CPU time=9.1280 s, Time Ratio=2.0815
+Physical time=19.1000 s, CPU time=9.1750 s, Time Ratio=2.0817
+Physical time=19.2000 s, CPU time=9.2220 s, Time Ratio=2.0820
+Physical time=19.3000 s, CPU time=9.2680 s, Time Ratio=2.0824
+Physical time=19.4000 s, CPU time=9.3150 s, Time Ratio=2.0827
+Physical time=19.5000 s, CPU time=9.3620 s, Time Ratio=2.0829
+Physical time=19.6000 s, CPU time=9.4090 s, Time Ratio=2.0831
+Physical time=19.7000 s, CPU time=9.4550 s, Time Ratio=2.0836
+Physical time=19.8000 s, CPU time=9.5010 s, Time Ratio=2.0840
+Physical time=19.9000 s, CPU time=9.5480 s, Time Ratio=2.0842
+Physical time=20.0000 s, CPU time=9.5950 s, Time Ratio=2.0844
+Physical time=20.1000 s, CPU time=9.6420 s, Time Ratio=2.0846
+Physical time=20.2000 s, CPU time=9.6890 s, Time Ratio=2.0848
+Physical time=20.3000 s, CPU time=9.7350 s, Time Ratio=2.0853
+Physical time=20.4000 s, CPU time=9.7820 s, Time Ratio=2.0855
+Physical time=20.5000 s, CPU time=9.8290 s, Time Ratio=2.0857
+Physical time=20.6000 s, CPU time=9.8750 s, Time Ratio=2.0861
+Physical time=20.7000 s, CPU time=9.9220 s, Time Ratio=2.0863
+Physical time=20.8000 s, CPU time=9.9690 s, Time Ratio=2.0865
+Physical time=20.9000 s, CPU time=10.0150 s, Time Ratio=2.0869
+Physical time=21.0000 s, CPU time=10.0620 s, Time Ratio=2.0871
+Physical time=21.1000 s, CPU time=10.1080 s, Time Ratio=2.0875
+Physical time=21.2000 s, CPU time=10.1550 s, Time Ratio=2.0876
+Physical time=21.3000 s, CPU time=10.2010 s, Time Ratio=2.0880
+Physical time=21.4000 s, CPU time=10.2480 s, Time Ratio=2.0882
+Physical time=21.5000 s, CPU time=10.2940 s, Time Ratio=2.0886
+Physical time=21.6000 s, CPU time=10.3410 s, Time Ratio=2.0888
+Physical time=21.7000 s, CPU time=10.3880 s, Time Ratio=2.0889
+Physical time=21.8000 s, CPU time=10.4350 s, Time Ratio=2.0891
+Physical time=21.9000 s, CPU time=10.4810 s, Time Ratio=2.0895
+Physical time=22.0000 s, CPU time=10.5280 s, Time Ratio=2.0897
+Physical time=22.1000 s, CPU time=10.5740 s, Time Ratio=2.0900
+Physical time=22.2000 s, CPU time=10.6210 s, Time Ratio=2.0902
+Physical time=22.3000 s, CPU time=10.6670 s, Time Ratio=2.0906
+Physical time=22.4000 s, CPU time=10.7140 s, Time Ratio=2.0907
+Physical time=22.5000 s, CPU time=10.7600 s, Time Ratio=2.0911
+Physical time=22.6000 s, CPU time=10.8070 s, Time Ratio=2.0912
+Physical time=22.7000 s, CPU time=10.8530 s, Time Ratio=2.0916
+Physical time=22.8000 s, CPU time=10.9000 s, Time Ratio=2.0917
+Physical time=22.9000 s, CPU time=10.9470 s, Time Ratio=2.0919
+Physical time=23.0000 s, CPU time=10.9930 s, Time Ratio=2.0922
+Physical time=23.1000 s, CPU time=11.0400 s, Time Ratio=2.0924
+Physical time=23.2000 s, CPU time=11.0860 s, Time Ratio=2.0927
+Physical time=23.3000 s, CPU time=11.1320 s, Time Ratio=2.0931
+Physical time=23.4000 s, CPU time=11.1780 s, Time Ratio=2.0934
+Physical time=23.5000 s, CPU time=11.2240 s, Time Ratio=2.0937
+Physical time=23.6000 s, CPU time=11.2700 s, Time Ratio=2.0941
+Physical time=23.7000 s, CPU time=11.3160 s, Time Ratio=2.0944
+Physical time=23.8000 s, CPU time=11.3630 s, Time Ratio=2.0945
+Physical time=23.9000 s, CPU time=11.4100 s, Time Ratio=2.0947
+Physical time=24.0000 s, CPU time=11.4570 s, Time Ratio=2.0948
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=24.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=24.000000[s]
+	Averaged room temperature 11.943392[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=285.787108
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 5.064252[W]
+		East Wall: 3.200970[W]
+		South Wall: 6.049460[W]
+		North Wall: 6.463023[W]
+		Ceiling: 0.017598[W]
+		Floor: -71.917378[W]
+	Sensor Information:
+		Occupied zone air temperature: 285.093392
+		Velocity: 0.696053
+ffd_solver(): Synchronized data at t=24.000000[s]
+
+Physical time=24.1000 s, CPU time=11.5190 s, Time Ratio=2.0922
+Physical time=24.2000 s, CPU time=11.5650 s, Time Ratio=2.0925
+Physical time=24.3000 s, CPU time=11.6110 s, Time Ratio=2.0928
+Physical time=24.4000 s, CPU time=11.6570 s, Time Ratio=2.0932
+Physical time=24.5000 s, CPU time=11.7040 s, Time Ratio=2.0933
+Physical time=24.6000 s, CPU time=11.7500 s, Time Ratio=2.0936
+Physical time=24.7000 s, CPU time=11.7960 s, Time Ratio=2.0939
+Physical time=24.8000 s, CPU time=11.8430 s, Time Ratio=2.0941
+Physical time=24.9000 s, CPU time=11.8890 s, Time Ratio=2.0944
+Physical time=25.0000 s, CPU time=11.9360 s, Time Ratio=2.0945
+Physical time=25.1000 s, CPU time=11.9830 s, Time Ratio=2.0946
+Physical time=25.2000 s, CPU time=12.0300 s, Time Ratio=2.0948
+Physical time=25.3000 s, CPU time=12.0760 s, Time Ratio=2.0951
+Physical time=25.4000 s, CPU time=12.1230 s, Time Ratio=2.0952
+Physical time=25.5000 s, CPU time=12.1690 s, Time Ratio=2.0955
+Physical time=25.6000 s, CPU time=12.2170 s, Time Ratio=2.0954
+Physical time=25.7000 s, CPU time=12.2640 s, Time Ratio=2.0956
+Physical time=25.8000 s, CPU time=12.3110 s, Time Ratio=2.0957
+Physical time=25.9000 s, CPU time=12.3570 s, Time Ratio=2.0960
+Physical time=26.0000 s, CPU time=12.4040 s, Time Ratio=2.0961
+Physical time=26.1000 s, CPU time=12.4510 s, Time Ratio=2.0962
+Physical time=26.2000 s, CPU time=12.4980 s, Time Ratio=2.0963
+Physical time=26.3000 s, CPU time=12.5440 s, Time Ratio=2.0966
+Physical time=26.4000 s, CPU time=12.5910 s, Time Ratio=2.0967
+Physical time=26.5000 s, CPU time=12.6380 s, Time Ratio=2.0969
+Physical time=26.6000 s, CPU time=12.6840 s, Time Ratio=2.0971
+Physical time=26.7000 s, CPU time=12.7310 s, Time Ratio=2.0972
+Physical time=26.8000 s, CPU time=12.7780 s, Time Ratio=2.0974
+Physical time=26.9000 s, CPU time=12.8250 s, Time Ratio=2.0975
+Physical time=27.0000 s, CPU time=12.8710 s, Time Ratio=2.0977
+Physical time=27.1000 s, CPU time=12.9180 s, Time Ratio=2.0978
+Physical time=27.2000 s, CPU time=12.9650 s, Time Ratio=2.0980
+Physical time=27.3000 s, CPU time=13.0120 s, Time Ratio=2.0981
+Physical time=27.4000 s, CPU time=13.0580 s, Time Ratio=2.0983
+Physical time=27.5000 s, CPU time=13.1050 s, Time Ratio=2.0984
+Physical time=27.6000 s, CPU time=13.1510 s, Time Ratio=2.0987
+Physical time=27.7000 s, CPU time=13.1980 s, Time Ratio=2.0988
+Physical time=27.8000 s, CPU time=13.2440 s, Time Ratio=2.0991
+Physical time=27.9000 s, CPU time=13.2910 s, Time Ratio=2.0992
+Physical time=28.0000 s, CPU time=13.3380 s, Time Ratio=2.0993
+Physical time=28.1000 s, CPU time=13.3850 s, Time Ratio=2.0994
+Physical time=28.2000 s, CPU time=13.4310 s, Time Ratio=2.0996
+Physical time=28.3000 s, CPU time=13.4780 s, Time Ratio=2.0997
+Physical time=28.4000 s, CPU time=13.5250 s, Time Ratio=2.0998
+Physical time=28.5000 s, CPU time=13.5710 s, Time Ratio=2.1001
+Physical time=28.6000 s, CPU time=13.6180 s, Time Ratio=2.1002
+Physical time=28.7000 s, CPU time=13.6640 s, Time Ratio=2.1004
+Physical time=28.8000 s, CPU time=13.7110 s, Time Ratio=2.1005
+Physical time=28.9000 s, CPU time=13.7570 s, Time Ratio=2.1007
+Physical time=29.0000 s, CPU time=13.8040 s, Time Ratio=2.1008
+Physical time=29.1000 s, CPU time=13.8510 s, Time Ratio=2.1009
+Physical time=29.2000 s, CPU time=13.8980 s, Time Ratio=2.1010
+Physical time=29.3000 s, CPU time=13.9440 s, Time Ratio=2.1013
+Physical time=29.4000 s, CPU time=13.9910 s, Time Ratio=2.1014
+Physical time=29.5000 s, CPU time=14.0370 s, Time Ratio=2.1016
+Physical time=29.6000 s, CPU time=14.0840 s, Time Ratio=2.1017
+Physical time=29.7000 s, CPU time=14.1300 s, Time Ratio=2.1019
+Physical time=29.8000 s, CPU time=14.1770 s, Time Ratio=2.1020
+Physical time=29.9000 s, CPU time=14.2230 s, Time Ratio=2.1022
+Physical time=30.0000 s, CPU time=14.2690 s, Time Ratio=2.1025
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=30.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=30.000000[s]
+	Averaged room temperature 12.913356[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.285148
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 6.039199[W]
+		East Wall: 3.827373[W]
+		South Wall: 6.667610[W]
+		North Wall: 6.897402[W]
+		Ceiling: 0.548938[W]
+		Floor: -71.339205[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.063356
+		Velocity: 0.658598
+ffd_solver(): Synchronized data at t=30.000000[s]
+
+Physical time=30.1000 s, CPU time=14.3340 s, Time Ratio=2.0999
+Physical time=30.2000 s, CPU time=14.3820 s, Time Ratio=2.0998
+Physical time=30.3000 s, CPU time=14.4280 s, Time Ratio=2.1001
+Physical time=30.4000 s, CPU time=14.4750 s, Time Ratio=2.1002
+Physical time=30.5000 s, CPU time=14.5220 s, Time Ratio=2.1003
+Physical time=30.6000 s, CPU time=14.5680 s, Time Ratio=2.1005
+Physical time=30.7000 s, CPU time=14.6140 s, Time Ratio=2.1007
+Physical time=30.8000 s, CPU time=14.6610 s, Time Ratio=2.1008
+Physical time=30.9000 s, CPU time=14.7070 s, Time Ratio=2.1010
+Physical time=31.0000 s, CPU time=14.7530 s, Time Ratio=2.1013
+Physical time=31.1000 s, CPU time=14.8000 s, Time Ratio=2.1014
+Physical time=31.2000 s, CPU time=14.8460 s, Time Ratio=2.1016
+Physical time=31.3000 s, CPU time=14.8930 s, Time Ratio=2.1017
+Physical time=31.4000 s, CPU time=14.9400 s, Time Ratio=2.1017
+Physical time=31.5000 s, CPU time=14.9860 s, Time Ratio=2.1020
+Physical time=31.6000 s, CPU time=15.0330 s, Time Ratio=2.1020
+Physical time=31.7000 s, CPU time=15.0790 s, Time Ratio=2.1023
+Physical time=31.8000 s, CPU time=15.1260 s, Time Ratio=2.1023
+Physical time=31.9000 s, CPU time=15.1720 s, Time Ratio=2.1026
+Physical time=32.0000 s, CPU time=15.2190 s, Time Ratio=2.1026
+Physical time=32.1000 s, CPU time=15.2660 s, Time Ratio=2.1027
+Physical time=32.2000 s, CPU time=15.3140 s, Time Ratio=2.1027
+Physical time=32.3000 s, CPU time=15.3610 s, Time Ratio=2.1027
+Physical time=32.4000 s, CPU time=15.4530 s, Time Ratio=2.0967
+Physical time=32.5000 s, CPU time=15.5000 s, Time Ratio=2.0968
+Physical time=32.6000 s, CPU time=15.5470 s, Time Ratio=2.0969
+Physical time=32.7000 s, CPU time=15.5930 s, Time Ratio=2.0971
+Physical time=32.8000 s, CPU time=15.6390 s, Time Ratio=2.0973
+Physical time=32.9000 s, CPU time=15.6860 s, Time Ratio=2.0974
+Physical time=33.0000 s, CPU time=15.7330 s, Time Ratio=2.0975
+Physical time=33.1000 s, CPU time=15.7800 s, Time Ratio=2.0976
+Physical time=33.2000 s, CPU time=15.8260 s, Time Ratio=2.0978
+Physical time=33.3000 s, CPU time=15.8720 s, Time Ratio=2.0980
+Physical time=33.4000 s, CPU time=15.9180 s, Time Ratio=2.0983
+Physical time=33.5000 s, CPU time=15.9640 s, Time Ratio=2.0985
+Physical time=33.6000 s, CPU time=16.0110 s, Time Ratio=2.0986
+Physical time=33.7000 s, CPU time=16.0570 s, Time Ratio=2.0988
+Physical time=33.8000 s, CPU time=16.1040 s, Time Ratio=2.0989
+Physical time=33.9000 s, CPU time=16.1500 s, Time Ratio=2.0991
+Physical time=34.0000 s, CPU time=16.1960 s, Time Ratio=2.0993
+Physical time=34.1000 s, CPU time=16.2430 s, Time Ratio=2.0994
+Physical time=34.2000 s, CPU time=16.2890 s, Time Ratio=2.0996
+Physical time=34.3000 s, CPU time=16.3350 s, Time Ratio=2.0998
+Physical time=34.4000 s, CPU time=16.3820 s, Time Ratio=2.0999
+Physical time=34.5000 s, CPU time=16.4280 s, Time Ratio=2.1001
+Physical time=34.6000 s, CPU time=16.4740 s, Time Ratio=2.1003
+Physical time=34.7000 s, CPU time=16.5210 s, Time Ratio=2.1004
+Physical time=34.8000 s, CPU time=16.5670 s, Time Ratio=2.1006
+Physical time=34.9000 s, CPU time=16.6140 s, Time Ratio=2.1006
+Physical time=35.0000 s, CPU time=16.6600 s, Time Ratio=2.1008
+Physical time=35.1000 s, CPU time=16.7060 s, Time Ratio=2.1010
+Physical time=35.2000 s, CPU time=16.7530 s, Time Ratio=2.1011
+Physical time=35.3000 s, CPU time=16.8000 s, Time Ratio=2.1012
+Physical time=35.4000 s, CPU time=16.8460 s, Time Ratio=2.1014
+Physical time=35.5000 s, CPU time=16.8920 s, Time Ratio=2.1016
+Physical time=35.6000 s, CPU time=16.9380 s, Time Ratio=2.1018
+Physical time=35.7000 s, CPU time=16.9850 s, Time Ratio=2.1019
+Physical time=35.8000 s, CPU time=17.0310 s, Time Ratio=2.1020
+Physical time=35.9000 s, CPU time=17.0780 s, Time Ratio=2.1021
+Physical time=36.0000 s, CPU time=17.1240 s, Time Ratio=2.1023
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=36.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=36.000000[s]
+	Averaged room temperature 13.302978[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.300640
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 6.449356[W]
+		East Wall: 3.733858[W]
+		South Wall: 6.962914[W]
+		North Wall: 7.217773[W]
+		Ceiling: 0.530177[W]
+		Floor: -71.682572[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.452978
+		Velocity: 0.672776
+ffd_solver(): Synchronized data at t=36.000000[s]
+
+Physical time=36.1000 s, CPU time=17.1890 s, Time Ratio=2.1002
+Physical time=36.2000 s, CPU time=17.2360 s, Time Ratio=2.1003
+Physical time=36.3000 s, CPU time=17.2900 s, Time Ratio=2.0995
+Physical time=36.4000 s, CPU time=17.3370 s, Time Ratio=2.0996
+Physical time=36.5000 s, CPU time=17.3840 s, Time Ratio=2.0996
+Physical time=36.6000 s, CPU time=17.4300 s, Time Ratio=2.0998
+Physical time=36.7000 s, CPU time=17.4760 s, Time Ratio=2.1000
+Physical time=36.8000 s, CPU time=17.5230 s, Time Ratio=2.1001
+Physical time=36.9000 s, CPU time=17.5700 s, Time Ratio=2.1002
+Physical time=37.0000 s, CPU time=17.6170 s, Time Ratio=2.1002
+Physical time=37.1000 s, CPU time=17.6640 s, Time Ratio=2.1003
+Physical time=37.2000 s, CPU time=17.7100 s, Time Ratio=2.1005
+Physical time=37.3000 s, CPU time=17.7570 s, Time Ratio=2.1006
+Physical time=37.4000 s, CPU time=17.8030 s, Time Ratio=2.1008
+Physical time=37.5000 s, CPU time=17.8500 s, Time Ratio=2.1008
+Physical time=37.6000 s, CPU time=17.8970 s, Time Ratio=2.1009
+Physical time=37.7000 s, CPU time=17.9430 s, Time Ratio=2.1011
+Physical time=37.8000 s, CPU time=18.0770 s, Time Ratio=2.0911
+Physical time=37.9000 s, CPU time=18.1240 s, Time Ratio=2.0911
+Physical time=38.0000 s, CPU time=18.1700 s, Time Ratio=2.0914
+Physical time=38.1000 s, CPU time=18.2160 s, Time Ratio=2.0916
+Physical time=38.2000 s, CPU time=18.2630 s, Time Ratio=2.0917
+Physical time=38.3000 s, CPU time=18.3090 s, Time Ratio=2.0919
+Physical time=38.4000 s, CPU time=18.3570 s, Time Ratio=2.0918
+Physical time=38.5000 s, CPU time=18.4040 s, Time Ratio=2.0919
+Physical time=38.6000 s, CPU time=18.4510 s, Time Ratio=2.0920
+Physical time=38.7000 s, CPU time=18.4980 s, Time Ratio=2.0921
+Physical time=38.8000 s, CPU time=18.5440 s, Time Ratio=2.0923
+Physical time=38.9000 s, CPU time=18.5910 s, Time Ratio=2.0924
+Physical time=39.0000 s, CPU time=18.6380 s, Time Ratio=2.0925
+Physical time=39.1000 s, CPU time=18.6840 s, Time Ratio=2.0927
+Physical time=39.2000 s, CPU time=18.7300 s, Time Ratio=2.0929
+Physical time=39.3000 s, CPU time=18.7770 s, Time Ratio=2.0930
+Physical time=39.4000 s, CPU time=18.8230 s, Time Ratio=2.0932
+Physical time=39.5000 s, CPU time=18.8690 s, Time Ratio=2.0934
+Physical time=39.6000 s, CPU time=18.9160 s, Time Ratio=2.0935
+Physical time=39.7000 s, CPU time=18.9620 s, Time Ratio=2.0937
+Physical time=39.8000 s, CPU time=19.0100 s, Time Ratio=2.0936
+Physical time=39.9000 s, CPU time=19.0560 s, Time Ratio=2.0938
+Physical time=40.0000 s, CPU time=19.1030 s, Time Ratio=2.0939
+Physical time=40.1000 s, CPU time=19.1500 s, Time Ratio=2.0940
+Physical time=40.2000 s, CPU time=19.1960 s, Time Ratio=2.0942
+Physical time=40.3000 s, CPU time=19.2430 s, Time Ratio=2.0943
+Physical time=40.4000 s, CPU time=19.2890 s, Time Ratio=2.0945
+Physical time=40.5000 s, CPU time=19.3360 s, Time Ratio=2.0945
+Physical time=40.6000 s, CPU time=19.3820 s, Time Ratio=2.0947
+Physical time=40.7000 s, CPU time=19.4290 s, Time Ratio=2.0948
+Physical time=40.8000 s, CPU time=19.4750 s, Time Ratio=2.0950
+Physical time=40.9000 s, CPU time=19.5210 s, Time Ratio=2.0952
+Physical time=41.0000 s, CPU time=19.5680 s, Time Ratio=2.0953
+Physical time=41.1000 s, CPU time=19.6150 s, Time Ratio=2.0953
+Physical time=41.2000 s, CPU time=19.6610 s, Time Ratio=2.0955
+Physical time=41.3000 s, CPU time=19.7080 s, Time Ratio=2.0956
+Physical time=41.4000 s, CPU time=19.7550 s, Time Ratio=2.0957
+Physical time=41.5000 s, CPU time=19.8010 s, Time Ratio=2.0959
+Physical time=41.6000 s, CPU time=19.8470 s, Time Ratio=2.0960
+Physical time=41.7000 s, CPU time=19.8940 s, Time Ratio=2.0961
+Physical time=41.8000 s, CPU time=19.9400 s, Time Ratio=2.0963
+Physical time=41.9000 s, CPU time=19.9870 s, Time Ratio=2.0964
+Physical time=42.0000 s, CPU time=20.0380 s, Time Ratio=2.0960
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=42.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=42.000000[s]
+	Averaged room temperature 13.386831[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.375720
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.331651[W]
+		East Wall: 3.473609[W]
+		South Wall: 7.107532[W]
+		North Wall: 7.822113[W]
+		Ceiling: 0.145576[W]
+		Floor: -72.114880[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.536831
+		Velocity: 0.693822
+ffd_solver(): Synchronized data at t=42.000000[s]
+
+Physical time=42.1000 s, CPU time=20.1000 s, Time Ratio=2.0945
+Physical time=42.2000 s, CPU time=20.1470 s, Time Ratio=2.0946
+Physical time=42.3000 s, CPU time=20.1930 s, Time Ratio=2.0948
+Physical time=42.4000 s, CPU time=20.2390 s, Time Ratio=2.0950
+Physical time=42.5000 s, CPU time=20.2860 s, Time Ratio=2.0950
+Physical time=42.6000 s, CPU time=20.3330 s, Time Ratio=2.0951
+Physical time=42.7000 s, CPU time=20.3790 s, Time Ratio=2.0953
+Physical time=42.8000 s, CPU time=20.4270 s, Time Ratio=2.0953
+Physical time=42.9000 s, CPU time=20.4740 s, Time Ratio=2.0953
+Physical time=43.0000 s, CPU time=20.5210 s, Time Ratio=2.0954
+Physical time=43.1000 s, CPU time=20.5670 s, Time Ratio=2.0956
+Physical time=43.2000 s, CPU time=20.6140 s, Time Ratio=2.0957
+Physical time=43.3000 s, CPU time=20.6600 s, Time Ratio=2.0958
+Physical time=43.4000 s, CPU time=20.7060 s, Time Ratio=2.0960
+Physical time=43.5000 s, CPU time=20.7530 s, Time Ratio=2.0961
+Physical time=43.6000 s, CPU time=20.7990 s, Time Ratio=2.0963
+Physical time=43.7000 s, CPU time=20.8450 s, Time Ratio=2.0964
+Physical time=43.8000 s, CPU time=20.8920 s, Time Ratio=2.0965
+Physical time=43.9000 s, CPU time=20.9380 s, Time Ratio=2.0967
+Physical time=44.0000 s, CPU time=20.9850 s, Time Ratio=2.0967
+Physical time=44.1000 s, CPU time=21.0320 s, Time Ratio=2.0968
+Physical time=44.2000 s, CPU time=21.0780 s, Time Ratio=2.0970
+Physical time=44.3000 s, CPU time=21.1250 s, Time Ratio=2.0970
+Physical time=44.4000 s, CPU time=21.1710 s, Time Ratio=2.0972
+Physical time=44.5000 s, CPU time=21.2180 s, Time Ratio=2.0973
+Physical time=44.6000 s, CPU time=21.2640 s, Time Ratio=2.0974
+Physical time=44.7000 s, CPU time=21.3110 s, Time Ratio=2.0975
+Physical time=44.8000 s, CPU time=21.3570 s, Time Ratio=2.0977
+Physical time=44.9000 s, CPU time=21.4040 s, Time Ratio=2.0977
+Physical time=45.0000 s, CPU time=21.4500 s, Time Ratio=2.0979
+Physical time=45.1000 s, CPU time=21.4960 s, Time Ratio=2.0981
+Physical time=45.2000 s, CPU time=21.5430 s, Time Ratio=2.0981
+Physical time=45.3000 s, CPU time=21.5900 s, Time Ratio=2.0982
+Physical time=45.4000 s, CPU time=21.6370 s, Time Ratio=2.0983
+Physical time=45.5000 s, CPU time=21.6840 s, Time Ratio=2.0983
+Physical time=45.6000 s, CPU time=21.7300 s, Time Ratio=2.0985
+Physical time=45.7000 s, CPU time=21.7760 s, Time Ratio=2.0986
+Physical time=45.8000 s, CPU time=21.8220 s, Time Ratio=2.0988
+Physical time=45.9000 s, CPU time=21.8680 s, Time Ratio=2.0990
+Physical time=46.0000 s, CPU time=21.9150 s, Time Ratio=2.0990
+Physical time=46.1000 s, CPU time=21.9620 s, Time Ratio=2.0991
+Physical time=46.2000 s, CPU time=22.0080 s, Time Ratio=2.0992
+Physical time=46.3000 s, CPU time=22.0540 s, Time Ratio=2.0994
+Physical time=46.4000 s, CPU time=22.1010 s, Time Ratio=2.0995
+Physical time=46.5000 s, CPU time=22.1480 s, Time Ratio=2.0995
+Physical time=46.6000 s, CPU time=22.1950 s, Time Ratio=2.0996
+Physical time=46.7000 s, CPU time=22.2410 s, Time Ratio=2.0997
+Physical time=46.8000 s, CPU time=22.2880 s, Time Ratio=2.0998
+Physical time=46.9000 s, CPU time=22.3340 s, Time Ratio=2.0999
+Physical time=47.0000 s, CPU time=22.3800 s, Time Ratio=2.1001
+Physical time=47.1000 s, CPU time=22.4270 s, Time Ratio=2.1001
+Physical time=47.2000 s, CPU time=22.4730 s, Time Ratio=2.1003
+Physical time=47.3000 s, CPU time=22.5200 s, Time Ratio=2.1004
+Physical time=47.4000 s, CPU time=22.5660 s, Time Ratio=2.1005
+Physical time=47.5000 s, CPU time=22.6120 s, Time Ratio=2.1007
+Physical time=47.6000 s, CPU time=22.6590 s, Time Ratio=2.1007
+Physical time=47.7000 s, CPU time=22.7060 s, Time Ratio=2.1008
+Physical time=47.8000 s, CPU time=22.7520 s, Time Ratio=2.1009
+Physical time=47.9000 s, CPU time=22.7990 s, Time Ratio=2.1010
+Physical time=48.0000 s, CPU time=22.8450 s, Time Ratio=2.1011
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=48.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=48.000000[s]
+	Averaged room temperature 13.438218[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.375736
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.429530[W]
+		East Wall: 3.723155[W]
+		South Wall: 7.442608[W]
+		North Wall: 8.215759[W]
+		Ceiling: 0.282795[W]
+		Floor: -71.733360[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.588218
+		Velocity: 0.656619
+ffd_solver(): Synchronized data at t=48.000000[s]
+
+Physical time=48.1000 s, CPU time=22.9070 s, Time Ratio=2.0998
+Physical time=48.2000 s, CPU time=22.9530 s, Time Ratio=2.0999
+Physical time=48.3000 s, CPU time=23.0000 s, Time Ratio=2.1000
+Physical time=48.4000 s, CPU time=23.0460 s, Time Ratio=2.1001
+Physical time=48.5000 s, CPU time=23.0920 s, Time Ratio=2.1003
+Physical time=48.6000 s, CPU time=23.1390 s, Time Ratio=2.1004
+Physical time=48.7000 s, CPU time=23.1850 s, Time Ratio=2.1005
+Physical time=48.8000 s, CPU time=23.2320 s, Time Ratio=2.1006
+Physical time=48.9000 s, CPU time=23.2800 s, Time Ratio=2.1005
+Physical time=49.0000 s, CPU time=23.3260 s, Time Ratio=2.1007
+Physical time=49.1000 s, CPU time=23.3730 s, Time Ratio=2.1007
+Physical time=49.2000 s, CPU time=23.4190 s, Time Ratio=2.1009
+Physical time=49.3000 s, CPU time=23.4650 s, Time Ratio=2.1010
+Physical time=49.4000 s, CPU time=23.5140 s, Time Ratio=2.1009
+Physical time=49.5000 s, CPU time=23.5600 s, Time Ratio=2.1010
+Physical time=49.6000 s, CPU time=23.6070 s, Time Ratio=2.1011
+Physical time=49.7000 s, CPU time=23.6540 s, Time Ratio=2.1011
+Physical time=49.8000 s, CPU time=23.7010 s, Time Ratio=2.1012
+Physical time=49.9000 s, CPU time=23.7480 s, Time Ratio=2.1012
+Physical time=50.0000 s, CPU time=23.7940 s, Time Ratio=2.1014
+Physical time=50.1000 s, CPU time=23.8410 s, Time Ratio=2.1014
+Physical time=50.2000 s, CPU time=23.8880 s, Time Ratio=2.1015
+Physical time=50.3000 s, CPU time=23.9340 s, Time Ratio=2.1016
+Physical time=50.4000 s, CPU time=23.9810 s, Time Ratio=2.1017
+Physical time=50.5000 s, CPU time=24.0280 s, Time Ratio=2.1017
+Physical time=50.6000 s, CPU time=24.0740 s, Time Ratio=2.1019
+Physical time=50.7000 s, CPU time=24.1210 s, Time Ratio=2.1019
+Physical time=50.8000 s, CPU time=24.1680 s, Time Ratio=2.1020
+Physical time=50.9000 s, CPU time=24.2140 s, Time Ratio=2.1021
+Physical time=51.0000 s, CPU time=24.2610 s, Time Ratio=2.1021
+Physical time=51.1000 s, CPU time=24.3070 s, Time Ratio=2.1023
+Physical time=51.2000 s, CPU time=24.3540 s, Time Ratio=2.1023
+Physical time=51.3000 s, CPU time=24.4000 s, Time Ratio=2.1025
+Physical time=51.4000 s, CPU time=24.4470 s, Time Ratio=2.1025
+Physical time=51.5000 s, CPU time=24.5500 s, Time Ratio=2.0978
+Physical time=51.6000 s, CPU time=24.5970 s, Time Ratio=2.0978
+Physical time=51.7000 s, CPU time=24.6430 s, Time Ratio=2.0980
+Physical time=51.8000 s, CPU time=24.6900 s, Time Ratio=2.0980
+Physical time=51.9000 s, CPU time=24.7370 s, Time Ratio=2.0981
+Physical time=52.0000 s, CPU time=24.7830 s, Time Ratio=2.0982
+Physical time=52.1000 s, CPU time=24.8290 s, Time Ratio=2.0984
+Physical time=52.2000 s, CPU time=24.8760 s, Time Ratio=2.0984
+Physical time=52.3000 s, CPU time=24.9220 s, Time Ratio=2.0985
+Physical time=52.4000 s, CPU time=24.9690 s, Time Ratio=2.0986
+Physical time=52.5000 s, CPU time=25.0150 s, Time Ratio=2.0987
+Physical time=52.6000 s, CPU time=25.0620 s, Time Ratio=2.0988
+Physical time=52.7000 s, CPU time=25.1080 s, Time Ratio=2.0989
+Physical time=52.8000 s, CPU time=25.1550 s, Time Ratio=2.0990
+Physical time=52.9000 s, CPU time=25.2010 s, Time Ratio=2.0991
+Physical time=53.0000 s, CPU time=25.2470 s, Time Ratio=2.0993
+Physical time=53.1000 s, CPU time=25.2940 s, Time Ratio=2.0993
+Physical time=53.2000 s, CPU time=25.3400 s, Time Ratio=2.0994
+Physical time=53.3000 s, CPU time=25.3870 s, Time Ratio=2.0995
+Physical time=53.4000 s, CPU time=25.4330 s, Time Ratio=2.0996
+Physical time=53.5000 s, CPU time=25.4790 s, Time Ratio=2.0998
+Physical time=53.6000 s, CPU time=25.5250 s, Time Ratio=2.0999
+Physical time=53.7000 s, CPU time=25.5720 s, Time Ratio=2.1000
+Physical time=53.8000 s, CPU time=25.6180 s, Time Ratio=2.1001
+Physical time=53.9000 s, CPU time=25.6650 s, Time Ratio=2.1001
+Physical time=54.0000 s, CPU time=25.7110 s, Time Ratio=2.1003
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=54.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=54.000000[s]
+	Averaged room temperature 13.576036[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.337286
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.449545[W]
+		East Wall: 3.752526[W]
+		South Wall: 7.342752[W]
+		North Wall: 7.902412[W]
+		Ceiling: 0.595332[W]
+		Floor: -71.869580[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.726036
+		Velocity: 0.706090
+ffd_solver(): Synchronized data at t=54.000000[s]
+
+Physical time=54.1000 s, CPU time=25.7730 s, Time Ratio=2.0991
+Physical time=54.2000 s, CPU time=25.8200 s, Time Ratio=2.0991
+Physical time=54.3000 s, CPU time=25.8660 s, Time Ratio=2.0993
+Physical time=54.4000 s, CPU time=25.9120 s, Time Ratio=2.0994
+Physical time=54.5000 s, CPU time=25.9580 s, Time Ratio=2.0995
+Physical time=54.6000 s, CPU time=26.0050 s, Time Ratio=2.0996
+Physical time=54.7000 s, CPU time=26.0510 s, Time Ratio=2.0997
+Physical time=54.8000 s, CPU time=26.0980 s, Time Ratio=2.0998
+Physical time=54.9000 s, CPU time=26.1450 s, Time Ratio=2.0998
+Physical time=55.0000 s, CPU time=26.1920 s, Time Ratio=2.0999
+Physical time=55.1000 s, CPU time=26.2400 s, Time Ratio=2.0998
+Physical time=55.2000 s, CPU time=26.2870 s, Time Ratio=2.0999
+Physical time=55.3000 s, CPU time=26.3330 s, Time Ratio=2.1000
+Physical time=55.4000 s, CPU time=26.3800 s, Time Ratio=2.1001
+Physical time=55.5000 s, CPU time=26.4260 s, Time Ratio=2.1002
+Physical time=55.6000 s, CPU time=26.4730 s, Time Ratio=2.1003
+Physical time=55.7000 s, CPU time=26.5190 s, Time Ratio=2.1004
+Physical time=55.8000 s, CPU time=26.5650 s, Time Ratio=2.1005
+Physical time=55.9000 s, CPU time=26.6120 s, Time Ratio=2.1006
+Physical time=56.0000 s, CPU time=26.6580 s, Time Ratio=2.1007
+Physical time=56.1000 s, CPU time=26.7050 s, Time Ratio=2.1007
+Physical time=56.2000 s, CPU time=26.7520 s, Time Ratio=2.1008
+Physical time=56.3000 s, CPU time=26.7980 s, Time Ratio=2.1009
+Physical time=56.4000 s, CPU time=26.8450 s, Time Ratio=2.1009
+Physical time=56.5000 s, CPU time=26.8920 s, Time Ratio=2.1010
+Physical time=56.6000 s, CPU time=26.9390 s, Time Ratio=2.1010
+Physical time=56.7000 s, CPU time=26.9850 s, Time Ratio=2.1012
+Physical time=56.8000 s, CPU time=27.0320 s, Time Ratio=2.1012
+Physical time=56.9000 s, CPU time=27.0790 s, Time Ratio=2.1013
+Physical time=57.0000 s, CPU time=27.1250 s, Time Ratio=2.1014
+Physical time=57.1000 s, CPU time=27.1720 s, Time Ratio=2.1014
+Physical time=57.2000 s, CPU time=27.2180 s, Time Ratio=2.1016
+Physical time=57.3000 s, CPU time=27.2650 s, Time Ratio=2.1016
+Physical time=57.4000 s, CPU time=27.3110 s, Time Ratio=2.1017
+Physical time=57.5000 s, CPU time=27.3580 s, Time Ratio=2.1018
+Physical time=57.6000 s, CPU time=27.6220 s, Time Ratio=2.0853
+Physical time=57.7000 s, CPU time=27.6690 s, Time Ratio=2.0854
+Physical time=57.8000 s, CPU time=27.7150 s, Time Ratio=2.0855
+Physical time=57.9000 s, CPU time=27.7620 s, Time Ratio=2.0856
+Physical time=58.0000 s, CPU time=27.8080 s, Time Ratio=2.0857
+Physical time=58.1000 s, CPU time=27.8550 s, Time Ratio=2.0858
+Physical time=58.2000 s, CPU time=27.9010 s, Time Ratio=2.0859
+Physical time=58.3000 s, CPU time=27.9470 s, Time Ratio=2.0861
+Physical time=58.4000 s, CPU time=27.9930 s, Time Ratio=2.0862
+Physical time=58.5000 s, CPU time=28.0400 s, Time Ratio=2.0863
+Physical time=58.6000 s, CPU time=28.0860 s, Time Ratio=2.0864
+Physical time=58.7000 s, CPU time=28.1320 s, Time Ratio=2.0866
+Physical time=58.8000 s, CPU time=28.1790 s, Time Ratio=2.0867
+Physical time=58.9000 s, CPU time=28.2250 s, Time Ratio=2.0868
+Physical time=59.0000 s, CPU time=28.2720 s, Time Ratio=2.0869
+Physical time=59.1000 s, CPU time=28.3180 s, Time Ratio=2.0870
+Physical time=59.2000 s, CPU time=28.3650 s, Time Ratio=2.0871
+Physical time=59.3000 s, CPU time=28.4110 s, Time Ratio=2.0872
+Physical time=59.4000 s, CPU time=28.4570 s, Time Ratio=2.0874
+Physical time=59.5000 s, CPU time=28.5040 s, Time Ratio=2.0874
+Physical time=59.6000 s, CPU time=28.5500 s, Time Ratio=2.0876
+Physical time=59.7000 s, CPU time=28.5960 s, Time Ratio=2.0877
+Physical time=59.8000 s, CPU time=28.6430 s, Time Ratio=2.0878
+Physical time=59.9000 s, CPU time=28.6890 s, Time Ratio=2.0879
+Physical time=60.0000 s, CPU time=28.7360 s, Time Ratio=2.0880
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=60.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=60.000000[s]
+	Averaged room temperature 13.639683[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.394086
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.291262[W]
+		East Wall: 3.550322[W]
+		South Wall: 7.329933[W]
+		North Wall: 8.056211[W]
+		Ceiling: 0.162626[W]
+		Floor: -71.889937[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.789683
+		Velocity: 0.680039
+ffd_solver(): Synchronized data at t=60.000000[s]
+
+Physical time=60.1000 s, CPU time=28.8000 s, Time Ratio=2.0868
+Physical time=60.2000 s, CPU time=28.8470 s, Time Ratio=2.0869
+Physical time=60.3000 s, CPU time=28.8940 s, Time Ratio=2.0869
+Physical time=60.4000 s, CPU time=28.9400 s, Time Ratio=2.0871
+Physical time=60.5000 s, CPU time=28.9860 s, Time Ratio=2.0872
+Physical time=60.6000 s, CPU time=29.0330 s, Time Ratio=2.0873
+Physical time=60.7000 s, CPU time=29.0790 s, Time Ratio=2.0874
+Physical time=60.8000 s, CPU time=29.1260 s, Time Ratio=2.0875
+Physical time=60.9000 s, CPU time=29.1720 s, Time Ratio=2.0876
+Physical time=61.0000 s, CPU time=29.2190 s, Time Ratio=2.0877
+Physical time=61.1000 s, CPU time=29.2650 s, Time Ratio=2.0878
+Physical time=61.2000 s, CPU time=29.3130 s, Time Ratio=2.0878
+Physical time=61.3000 s, CPU time=29.3610 s, Time Ratio=2.0878
+Physical time=61.4000 s, CPU time=29.4080 s, Time Ratio=2.0879
+Physical time=61.5000 s, CPU time=29.4540 s, Time Ratio=2.0880
+Physical time=61.6000 s, CPU time=29.5010 s, Time Ratio=2.0881
+Physical time=61.7000 s, CPU time=29.5590 s, Time Ratio=2.0874
+Physical time=61.8000 s, CPU time=29.6170 s, Time Ratio=2.0866
+Physical time=61.9000 s, CPU time=29.6670 s, Time Ratio=2.0865
+Physical time=62.0000 s, CPU time=29.7130 s, Time Ratio=2.0866
+Physical time=62.1000 s, CPU time=29.7600 s, Time Ratio=2.0867
+Physical time=62.2000 s, CPU time=29.8060 s, Time Ratio=2.0868
+Physical time=62.3000 s, CPU time=29.8530 s, Time Ratio=2.0869
+Physical time=62.4000 s, CPU time=29.9000 s, Time Ratio=2.0870
+Physical time=62.5000 s, CPU time=29.9460 s, Time Ratio=2.0871
+Physical time=62.6000 s, CPU time=29.9930 s, Time Ratio=2.0872
+Physical time=62.7000 s, CPU time=30.0400 s, Time Ratio=2.0872
+Physical time=62.8000 s, CPU time=30.0860 s, Time Ratio=2.0873
+Physical time=62.9000 s, CPU time=30.1330 s, Time Ratio=2.0874
+Physical time=63.0000 s, CPU time=30.1790 s, Time Ratio=2.0875
+Physical time=63.1000 s, CPU time=30.2250 s, Time Ratio=2.0877
+Physical time=63.2000 s, CPU time=30.2720 s, Time Ratio=2.0877
+Physical time=63.3000 s, CPU time=30.3180 s, Time Ratio=2.0879
+Physical time=63.4000 s, CPU time=30.3640 s, Time Ratio=2.0880
+Physical time=63.5000 s, CPU time=30.4110 s, Time Ratio=2.0881
+Physical time=63.6000 s, CPU time=30.4570 s, Time Ratio=2.0882
+Physical time=63.7000 s, CPU time=30.5030 s, Time Ratio=2.0883
+Physical time=63.8000 s, CPU time=30.5500 s, Time Ratio=2.0884
+Physical time=63.9000 s, CPU time=30.5960 s, Time Ratio=2.0885
+Physical time=64.0000 s, CPU time=30.6430 s, Time Ratio=2.0886
+Physical time=64.1000 s, CPU time=30.6890 s, Time Ratio=2.0887
+Physical time=64.2000 s, CPU time=30.7360 s, Time Ratio=2.0888
+Physical time=64.3000 s, CPU time=30.7820 s, Time Ratio=2.0889
+Physical time=64.4000 s, CPU time=30.8290 s, Time Ratio=2.0889
+Physical time=64.5000 s, CPU time=30.8750 s, Time Ratio=2.0891
+Physical time=64.6000 s, CPU time=30.9220 s, Time Ratio=2.0891
+Physical time=64.7000 s, CPU time=30.9680 s, Time Ratio=2.0893
+Physical time=64.8000 s, CPU time=31.0150 s, Time Ratio=2.0893
+Physical time=64.9000 s, CPU time=31.0610 s, Time Ratio=2.0894
+Physical time=65.0000 s, CPU time=31.1070 s, Time Ratio=2.0896
+Physical time=65.1000 s, CPU time=31.1540 s, Time Ratio=2.0896
+Physical time=65.2000 s, CPU time=31.2010 s, Time Ratio=2.0897
+Physical time=65.3000 s, CPU time=31.2470 s, Time Ratio=2.0898
+Physical time=65.4000 s, CPU time=31.2940 s, Time Ratio=2.0899
+Physical time=65.5000 s, CPU time=31.3400 s, Time Ratio=2.0900
+Physical time=65.6000 s, CPU time=31.3870 s, Time Ratio=2.0900
+Physical time=65.7000 s, CPU time=31.4330 s, Time Ratio=2.0902
+Physical time=65.8000 s, CPU time=31.4800 s, Time Ratio=2.0902
+Physical time=65.9000 s, CPU time=31.5260 s, Time Ratio=2.0903
+Physical time=66.0000 s, CPU time=31.5730 s, Time Ratio=2.0904
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=66.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=66.000000[s]
+	Averaged room temperature 13.459936[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.402800
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.263929[W]
+		East Wall: 3.639529[W]
+		South Wall: 7.398602[W]
+		North Wall: 8.085754[W]
+		Ceiling: 0.048817[W]
+		Floor: -71.700726[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.609936
+		Velocity: 0.683603
+ffd_solver(): Synchronized data at t=66.000000[s]
+
+Physical time=66.1000 s, CPU time=31.6970 s, Time Ratio=2.0854
+Physical time=66.2000 s, CPU time=31.7440 s, Time Ratio=2.0854
+Physical time=66.3000 s, CPU time=31.7910 s, Time Ratio=2.0855
+Physical time=66.4000 s, CPU time=31.8370 s, Time Ratio=2.0856
+Physical time=66.5000 s, CPU time=31.8850 s, Time Ratio=2.0856
+Physical time=66.6000 s, CPU time=31.9310 s, Time Ratio=2.0857
+Physical time=66.7000 s, CPU time=31.9780 s, Time Ratio=2.0858
+Physical time=66.8000 s, CPU time=32.0250 s, Time Ratio=2.0859
+Physical time=66.9000 s, CPU time=32.0710 s, Time Ratio=2.0860
+Physical time=67.0000 s, CPU time=32.1180 s, Time Ratio=2.0861
+Physical time=67.1000 s, CPU time=32.1640 s, Time Ratio=2.0862
+Physical time=67.2000 s, CPU time=32.2110 s, Time Ratio=2.0862
+Physical time=67.3000 s, CPU time=32.2580 s, Time Ratio=2.0863
+Physical time=67.4000 s, CPU time=32.3040 s, Time Ratio=2.0864
+Physical time=67.5000 s, CPU time=32.3510 s, Time Ratio=2.0865
+Physical time=67.6000 s, CPU time=32.3990 s, Time Ratio=2.0865
+Physical time=67.7000 s, CPU time=32.4460 s, Time Ratio=2.0865
+Physical time=67.8000 s, CPU time=32.4930 s, Time Ratio=2.0866
+Physical time=67.9000 s, CPU time=32.5400 s, Time Ratio=2.0867
+Physical time=68.0000 s, CPU time=32.5860 s, Time Ratio=2.0868
+Physical time=68.1000 s, CPU time=32.6320 s, Time Ratio=2.0869
+Physical time=68.2000 s, CPU time=32.6790 s, Time Ratio=2.0870
+Physical time=68.3000 s, CPU time=32.7250 s, Time Ratio=2.0871
+Physical time=68.4000 s, CPU time=32.7720 s, Time Ratio=2.0871
+Physical time=68.5000 s, CPU time=32.8180 s, Time Ratio=2.0873
+Physical time=68.6000 s, CPU time=32.8640 s, Time Ratio=2.0874
+Physical time=68.7000 s, CPU time=32.9110 s, Time Ratio=2.0874
+Physical time=68.8000 s, CPU time=32.9580 s, Time Ratio=2.0875
+Physical time=68.9000 s, CPU time=33.0040 s, Time Ratio=2.0876
+Physical time=69.0000 s, CPU time=33.0510 s, Time Ratio=2.0877
+Physical time=69.1000 s, CPU time=33.0970 s, Time Ratio=2.0878
+Physical time=69.2000 s, CPU time=33.1440 s, Time Ratio=2.0879
+Physical time=69.3000 s, CPU time=33.1900 s, Time Ratio=2.0880
+Physical time=69.4000 s, CPU time=33.2370 s, Time Ratio=2.0880
+Physical time=69.5000 s, CPU time=33.2830 s, Time Ratio=2.0882
+Physical time=69.6000 s, CPU time=33.3290 s, Time Ratio=2.0883
+Physical time=69.7000 s, CPU time=33.3760 s, Time Ratio=2.0883
+Physical time=69.8000 s, CPU time=33.4220 s, Time Ratio=2.0884
+Physical time=69.9000 s, CPU time=33.4690 s, Time Ratio=2.0885
+Physical time=70.0000 s, CPU time=33.5150 s, Time Ratio=2.0886
+Physical time=70.1000 s, CPU time=33.5610 s, Time Ratio=2.0887
+Physical time=70.2000 s, CPU time=33.6080 s, Time Ratio=2.0888
+Physical time=70.3000 s, CPU time=33.6540 s, Time Ratio=2.0889
+Physical time=70.4000 s, CPU time=33.7010 s, Time Ratio=2.0890
+Physical time=70.5000 s, CPU time=33.7470 s, Time Ratio=2.0891
+Physical time=70.6000 s, CPU time=33.7930 s, Time Ratio=2.0892
+Physical time=70.7000 s, CPU time=33.8400 s, Time Ratio=2.0892
+Physical time=70.8000 s, CPU time=33.8870 s, Time Ratio=2.0893
+Physical time=70.9000 s, CPU time=33.9340 s, Time Ratio=2.0893
+Physical time=71.0000 s, CPU time=33.9810 s, Time Ratio=2.0894
+Physical time=71.1000 s, CPU time=34.0270 s, Time Ratio=2.0895
+Physical time=71.2000 s, CPU time=34.0740 s, Time Ratio=2.0896
+Physical time=71.3000 s, CPU time=34.1200 s, Time Ratio=2.0897
+Physical time=71.4000 s, CPU time=34.1670 s, Time Ratio=2.0897
+Physical time=71.5000 s, CPU time=34.2140 s, Time Ratio=2.0898
+Physical time=71.6000 s, CPU time=34.2600 s, Time Ratio=2.0899
+Physical time=71.7000 s, CPU time=34.3070 s, Time Ratio=2.0900
+Physical time=71.8000 s, CPU time=34.3530 s, Time Ratio=2.0901
+Physical time=71.9000 s, CPU time=34.4000 s, Time Ratio=2.0901
+Physical time=72.0000 s, CPU time=34.4460 s, Time Ratio=2.0902
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=72.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=72.000000[s]
+	Averaged room temperature 13.627245[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.423130
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 8.014541[W]
+		East Wall: 3.435328[W]
+		South Wall: 7.283930[W]
+		North Wall: 8.008620[W]
+		Ceiling: 0.302807[W]
+		Floor: -71.671427[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.777245
+		Velocity: 0.691932
+ffd_solver(): Synchronized data at t=72.000000[s]
+
+Physical time=72.1000 s, CPU time=34.5110 s, Time Ratio=2.0892
+Physical time=72.2000 s, CPU time=34.5590 s, Time Ratio=2.0892
+Physical time=72.3000 s, CPU time=34.6060 s, Time Ratio=2.0892
+Physical time=72.4000 s, CPU time=34.6530 s, Time Ratio=2.0893
+Physical time=72.5000 s, CPU time=34.6990 s, Time Ratio=2.0894
+Physical time=72.6000 s, CPU time=34.7460 s, Time Ratio=2.0894
+Physical time=72.7000 s, CPU time=34.7920 s, Time Ratio=2.0896
+Physical time=72.8000 s, CPU time=34.8390 s, Time Ratio=2.0896
+Physical time=72.9000 s, CPU time=34.8850 s, Time Ratio=2.0897
+Physical time=73.0000 s, CPU time=34.9320 s, Time Ratio=2.0898
+Physical time=73.1000 s, CPU time=34.9790 s, Time Ratio=2.0898
+Physical time=73.2000 s, CPU time=35.0250 s, Time Ratio=2.0899
+Physical time=73.3000 s, CPU time=35.0720 s, Time Ratio=2.0900
+Physical time=73.4000 s, CPU time=35.1180 s, Time Ratio=2.0901
+Physical time=73.5000 s, CPU time=35.1650 s, Time Ratio=2.0901
+Physical time=73.6000 s, CPU time=35.2120 s, Time Ratio=2.0902
+Physical time=73.7000 s, CPU time=35.2580 s, Time Ratio=2.0903
+Physical time=73.8000 s, CPU time=35.3050 s, Time Ratio=2.0904
+Physical time=73.9000 s, CPU time=35.3520 s, Time Ratio=2.0904
+Physical time=74.0000 s, CPU time=35.3990 s, Time Ratio=2.0905
+Physical time=74.1000 s, CPU time=35.4460 s, Time Ratio=2.0905
+Physical time=74.2000 s, CPU time=35.4940 s, Time Ratio=2.0905
+Physical time=74.3000 s, CPU time=35.5410 s, Time Ratio=2.0905
+Physical time=74.4000 s, CPU time=35.5880 s, Time Ratio=2.0906
+Physical time=74.5000 s, CPU time=35.6350 s, Time Ratio=2.0906
+Physical time=74.6000 s, CPU time=35.6810 s, Time Ratio=2.0907
+Physical time=74.7000 s, CPU time=35.7270 s, Time Ratio=2.0909
+Physical time=74.8000 s, CPU time=35.7740 s, Time Ratio=2.0909
+Physical time=74.9000 s, CPU time=35.8200 s, Time Ratio=2.0910
+Physical time=75.0000 s, CPU time=35.8670 s, Time Ratio=2.0911
+Physical time=75.1000 s, CPU time=35.9140 s, Time Ratio=2.0911
+Physical time=75.2000 s, CPU time=35.9610 s, Time Ratio=2.0912
+Physical time=75.3000 s, CPU time=36.0080 s, Time Ratio=2.0912
+Physical time=75.4000 s, CPU time=36.0550 s, Time Ratio=2.0912
+Physical time=75.5000 s, CPU time=36.1020 s, Time Ratio=2.0913
+Physical time=75.6000 s, CPU time=36.1490 s, Time Ratio=2.0913
+Physical time=75.7000 s, CPU time=36.1950 s, Time Ratio=2.0914
+Physical time=75.8000 s, CPU time=36.2420 s, Time Ratio=2.0915
+Physical time=75.9000 s, CPU time=36.2880 s, Time Ratio=2.0916
+Physical time=76.0000 s, CPU time=36.3350 s, Time Ratio=2.0916
+Physical time=76.1000 s, CPU time=36.3820 s, Time Ratio=2.0917
+Physical time=76.2000 s, CPU time=36.4280 s, Time Ratio=2.0918
+Physical time=76.3000 s, CPU time=36.4750 s, Time Ratio=2.0918
+Physical time=76.4000 s, CPU time=36.5220 s, Time Ratio=2.0919
+Physical time=76.5000 s, CPU time=36.5680 s, Time Ratio=2.0920
+Physical time=76.6000 s, CPU time=36.6150 s, Time Ratio=2.0920
+Physical time=76.7000 s, CPU time=36.6610 s, Time Ratio=2.0921
+Physical time=76.8000 s, CPU time=36.7080 s, Time Ratio=2.0922
+Physical time=76.9000 s, CPU time=36.7540 s, Time Ratio=2.0923
+Physical time=77.0000 s, CPU time=36.8010 s, Time Ratio=2.0923
+Physical time=77.1000 s, CPU time=36.8470 s, Time Ratio=2.0924
+Physical time=77.2000 s, CPU time=36.8930 s, Time Ratio=2.0925
+Physical time=77.3000 s, CPU time=36.9400 s, Time Ratio=2.0926
+Physical time=77.4000 s, CPU time=36.9870 s, Time Ratio=2.0926
+Physical time=77.5000 s, CPU time=37.0340 s, Time Ratio=2.0927
+Physical time=77.6000 s, CPU time=37.0800 s, Time Ratio=2.0928
+Physical time=77.7000 s, CPU time=37.1270 s, Time Ratio=2.0928
+Physical time=77.8000 s, CPU time=37.1740 s, Time Ratio=2.0929
+Physical time=77.9000 s, CPU time=37.2200 s, Time Ratio=2.0930
+Physical time=78.0000 s, CPU time=37.2670 s, Time Ratio=2.0930
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=78.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=78.000000[s]
+	Averaged room temperature 13.414693[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.337663
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 8.333733[W]
+		East Wall: 3.486098[W]
+		South Wall: 7.386576[W]
+		North Wall: 7.881012[W]
+		Ceiling: 0.043906[W]
+		Floor: -71.960883[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.564693
+		Velocity: 0.683325
+ffd_solver(): Synchronized data at t=78.000000[s]
+
+Physical time=78.1000 s, CPU time=37.3310 s, Time Ratio=2.0921
+Physical time=78.2000 s, CPU time=37.3780 s, Time Ratio=2.0921
+Physical time=78.3000 s, CPU time=37.4240 s, Time Ratio=2.0922
+Physical time=78.4000 s, CPU time=37.4700 s, Time Ratio=2.0923
+Physical time=78.5000 s, CPU time=37.5170 s, Time Ratio=2.0924
+Physical time=78.6000 s, CPU time=37.5630 s, Time Ratio=2.0925
+Physical time=78.7000 s, CPU time=37.6100 s, Time Ratio=2.0925
+Physical time=78.8000 s, CPU time=37.6570 s, Time Ratio=2.0926
+Physical time=78.9000 s, CPU time=37.7030 s, Time Ratio=2.0927
+Physical time=79.0000 s, CPU time=37.7500 s, Time Ratio=2.0927
+Physical time=79.1000 s, CPU time=37.7960 s, Time Ratio=2.0928
+Physical time=79.2000 s, CPU time=37.8430 s, Time Ratio=2.0929
+Physical time=79.3000 s, CPU time=37.8890 s, Time Ratio=2.0930
+Physical time=79.4000 s, CPU time=37.9360 s, Time Ratio=2.0930
+Physical time=79.5000 s, CPU time=37.9820 s, Time Ratio=2.0931
+Physical time=79.6000 s, CPU time=38.0300 s, Time Ratio=2.0931
+Physical time=79.7000 s, CPU time=38.0760 s, Time Ratio=2.0932
+Physical time=79.8000 s, CPU time=38.1230 s, Time Ratio=2.0932
+Physical time=79.9000 s, CPU time=38.1700 s, Time Ratio=2.0933
+Physical time=80.0000 s, CPU time=38.2170 s, Time Ratio=2.0933
+Physical time=80.1000 s, CPU time=38.2640 s, Time Ratio=2.0934
+Physical time=80.2000 s, CPU time=38.3100 s, Time Ratio=2.0934
+Physical time=80.3000 s, CPU time=38.3570 s, Time Ratio=2.0935
+Physical time=80.4000 s, CPU time=38.4030 s, Time Ratio=2.0936
+Physical time=80.5000 s, CPU time=38.4500 s, Time Ratio=2.0936
+Physical time=80.6000 s, CPU time=38.4960 s, Time Ratio=2.0937
+Physical time=80.7000 s, CPU time=38.5420 s, Time Ratio=2.0938
+Physical time=80.8000 s, CPU time=38.5910 s, Time Ratio=2.0938
+Physical time=80.9000 s, CPU time=38.6380 s, Time Ratio=2.0938
+Physical time=81.0000 s, CPU time=38.6840 s, Time Ratio=2.0939
+Physical time=81.1000 s, CPU time=38.7310 s, Time Ratio=2.0939
+Physical time=81.2000 s, CPU time=38.7770 s, Time Ratio=2.0940
+Physical time=81.3000 s, CPU time=38.8240 s, Time Ratio=2.0941
+Physical time=81.4000 s, CPU time=38.8710 s, Time Ratio=2.0941
+Physical time=81.5000 s, CPU time=38.9170 s, Time Ratio=2.0942
+Physical time=81.6000 s, CPU time=38.9640 s, Time Ratio=2.0942
+Physical time=81.7000 s, CPU time=39.0110 s, Time Ratio=2.0943
+Physical time=81.8000 s, CPU time=39.0580 s, Time Ratio=2.0943
+Physical time=81.9000 s, CPU time=39.1050 s, Time Ratio=2.0944
+Physical time=82.0000 s, CPU time=39.1510 s, Time Ratio=2.0945
+Physical time=82.1000 s, CPU time=39.1980 s, Time Ratio=2.0945
+Physical time=82.2000 s, CPU time=39.2440 s, Time Ratio=2.0946
+Physical time=82.3000 s, CPU time=39.2900 s, Time Ratio=2.0947
+Physical time=82.4000 s, CPU time=39.3370 s, Time Ratio=2.0947
+Physical time=82.5000 s, CPU time=39.3840 s, Time Ratio=2.0948
+Physical time=82.6000 s, CPU time=39.4310 s, Time Ratio=2.0948
+Physical time=82.7000 s, CPU time=39.4770 s, Time Ratio=2.0949
+Physical time=82.8000 s, CPU time=39.5240 s, Time Ratio=2.0949
+Physical time=82.9000 s, CPU time=39.5940 s, Time Ratio=2.0938
+Physical time=83.0000 s, CPU time=39.6400 s, Time Ratio=2.0938
+Physical time=83.1000 s, CPU time=39.6860 s, Time Ratio=2.0939
+Physical time=83.2000 s, CPU time=39.7330 s, Time Ratio=2.0940
+Physical time=83.3000 s, CPU time=39.7790 s, Time Ratio=2.0941
+Physical time=83.4000 s, CPU time=39.8250 s, Time Ratio=2.0942
+Physical time=83.5000 s, CPU time=39.8710 s, Time Ratio=2.0943
+Physical time=83.6000 s, CPU time=39.9180 s, Time Ratio=2.0943
+Physical time=83.7000 s, CPU time=39.9640 s, Time Ratio=2.0944
+Physical time=83.8000 s, CPU time=40.0110 s, Time Ratio=2.0944
+Physical time=83.9000 s, CPU time=40.0580 s, Time Ratio=2.0945
+Physical time=84.0000 s, CPU time=40.1050 s, Time Ratio=2.0945
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=84.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=84.000000[s]
+	Averaged room temperature 13.257193[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.189025
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.668585[W]
+		East Wall: 2.573620[W]
+		South Wall: 7.164821[W]
+		North Wall: 7.757948[W]
+		Ceiling: 0.021870[W]
+		Floor: -71.361231[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.407193
+		Velocity: 0.669439
+ffd_solver(): Synchronized data at t=84.000000[s]
+
+Physical time=84.1000 s, CPU time=40.1690 s, Time Ratio=2.0937
+Physical time=84.2000 s, CPU time=40.2190 s, Time Ratio=2.0935
+Physical time=84.3000 s, CPU time=40.2660 s, Time Ratio=2.0936
+Physical time=84.4000 s, CPU time=40.3190 s, Time Ratio=2.0933
+Physical time=84.5000 s, CPU time=40.3690 s, Time Ratio=2.0932
+Physical time=84.6000 s, CPU time=40.4160 s, Time Ratio=2.0932
+Physical time=84.7000 s, CPU time=40.4620 s, Time Ratio=2.0933
+Physical time=84.8000 s, CPU time=40.5080 s, Time Ratio=2.0934
+Physical time=84.9000 s, CPU time=40.5550 s, Time Ratio=2.0935
+Physical time=85.0000 s, CPU time=40.6010 s, Time Ratio=2.0935
+Physical time=85.1000 s, CPU time=40.6480 s, Time Ratio=2.0936
+Physical time=85.2000 s, CPU time=40.6940 s, Time Ratio=2.0937
+Physical time=85.3000 s, CPU time=40.7400 s, Time Ratio=2.0938
+Physical time=85.4000 s, CPU time=40.7870 s, Time Ratio=2.0938
+Physical time=85.5000 s, CPU time=40.8330 s, Time Ratio=2.0939
+Physical time=85.6000 s, CPU time=40.8790 s, Time Ratio=2.0940
+Physical time=85.7000 s, CPU time=40.9260 s, Time Ratio=2.0940
+Physical time=85.8000 s, CPU time=40.9720 s, Time Ratio=2.0941
+Physical time=85.9000 s, CPU time=41.0190 s, Time Ratio=2.0942
+Physical time=86.0000 s, CPU time=41.0650 s, Time Ratio=2.0942
+Physical time=86.1000 s, CPU time=41.1130 s, Time Ratio=2.0942
+Physical time=86.2000 s, CPU time=41.1620 s, Time Ratio=2.0942
+Physical time=86.3000 s, CPU time=41.2090 s, Time Ratio=2.0942
+Physical time=86.4000 s, CPU time=41.2550 s, Time Ratio=2.0943
+Physical time=86.5000 s, CPU time=41.3020 s, Time Ratio=2.0943
+Physical time=86.6000 s, CPU time=41.3480 s, Time Ratio=2.0944
+Physical time=86.7000 s, CPU time=41.4040 s, Time Ratio=2.0940
+Physical time=86.8000 s, CPU time=41.4500 s, Time Ratio=2.0941
+Physical time=86.9000 s, CPU time=41.4960 s, Time Ratio=2.0942
+Physical time=87.0000 s, CPU time=41.5420 s, Time Ratio=2.0943
+Physical time=87.1000 s, CPU time=41.5890 s, Time Ratio=2.0943
+Physical time=87.2000 s, CPU time=41.6350 s, Time Ratio=2.0944
+Physical time=87.3000 s, CPU time=41.6820 s, Time Ratio=2.0944
+Physical time=87.4000 s, CPU time=41.7280 s, Time Ratio=2.0945
+Physical time=87.5000 s, CPU time=41.7750 s, Time Ratio=2.0946
+Physical time=87.6000 s, CPU time=41.8210 s, Time Ratio=2.0946
+Physical time=87.7000 s, CPU time=41.8680 s, Time Ratio=2.0947
+Physical time=87.8000 s, CPU time=41.9150 s, Time Ratio=2.0947
+Physical time=87.9000 s, CPU time=41.9620 s, Time Ratio=2.0948
+Physical time=88.0000 s, CPU time=42.0100 s, Time Ratio=2.0947
+Physical time=88.1000 s, CPU time=42.0570 s, Time Ratio=2.0948
+Physical time=88.2000 s, CPU time=42.1040 s, Time Ratio=2.0948
+Physical time=88.3000 s, CPU time=42.1510 s, Time Ratio=2.0948
+Physical time=88.4000 s, CPU time=42.1980 s, Time Ratio=2.0949
+Physical time=88.5000 s, CPU time=42.2450 s, Time Ratio=2.0949
+Physical time=88.6000 s, CPU time=42.2920 s, Time Ratio=2.0950
+Physical time=88.7000 s, CPU time=42.3380 s, Time Ratio=2.0950
+Physical time=88.8000 s, CPU time=42.3850 s, Time Ratio=2.0951
+Physical time=88.9000 s, CPU time=42.4310 s, Time Ratio=2.0952
+Physical time=89.0000 s, CPU time=42.4780 s, Time Ratio=2.0952
+Physical time=89.1000 s, CPU time=42.5250 s, Time Ratio=2.0952
+Physical time=89.2000 s, CPU time=42.5720 s, Time Ratio=2.0953
+Physical time=89.3000 s, CPU time=42.6180 s, Time Ratio=2.0954
+Physical time=89.4000 s, CPU time=42.6640 s, Time Ratio=2.0954
+Physical time=89.5000 s, CPU time=42.7120 s, Time Ratio=2.0954
+Physical time=89.6000 s, CPU time=42.7590 s, Time Ratio=2.0955
+Physical time=89.7000 s, CPU time=42.8060 s, Time Ratio=2.0955
+Physical time=89.8000 s, CPU time=42.8520 s, Time Ratio=2.0956
+Physical time=89.9000 s, CPU time=42.8980 s, Time Ratio=2.0957
+Physical time=90.0000 s, CPU time=42.9450 s, Time Ratio=2.0957
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=90.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=90.000000[s]
+	Averaged room temperature 13.221374[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.229819
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.950510[W]
+		East Wall: 2.850104[W]
+		South Wall: 7.360311[W]
+		North Wall: 7.733493[W]
+		Ceiling: 0.021741[W]
+		Floor: -71.285685[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.371374
+		Velocity: 0.684516
+ffd_solver(): Synchronized data at t=90.000000[s]
+
+Physical time=90.1000 s, CPU time=43.0090 s, Time Ratio=2.0949
+Physical time=90.2000 s, CPU time=43.0550 s, Time Ratio=2.0950
+Physical time=90.3000 s, CPU time=43.1010 s, Time Ratio=2.0951
+Physical time=90.4000 s, CPU time=43.1480 s, Time Ratio=2.0951
+Physical time=90.5000 s, CPU time=43.1950 s, Time Ratio=2.0951
+Physical time=90.6000 s, CPU time=43.2430 s, Time Ratio=2.0951
+Physical time=90.7000 s, CPU time=43.2900 s, Time Ratio=2.0952
+Physical time=90.8000 s, CPU time=43.3370 s, Time Ratio=2.0952
+Physical time=90.9000 s, CPU time=43.3850 s, Time Ratio=2.0952
+Physical time=91.0000 s, CPU time=43.4310 s, Time Ratio=2.0953
+Physical time=91.1000 s, CPU time=43.4770 s, Time Ratio=2.0954
+Physical time=91.2000 s, CPU time=43.5230 s, Time Ratio=2.0954
+Physical time=91.3000 s, CPU time=43.5700 s, Time Ratio=2.0955
+Physical time=91.4000 s, CPU time=43.6160 s, Time Ratio=2.0956
+Physical time=91.5000 s, CPU time=43.6620 s, Time Ratio=2.0956
+Physical time=91.6000 s, CPU time=43.7090 s, Time Ratio=2.0957
+Physical time=91.7000 s, CPU time=43.7560 s, Time Ratio=2.0957
+Physical time=91.8000 s, CPU time=43.8020 s, Time Ratio=2.0958
+Physical time=91.9000 s, CPU time=43.8490 s, Time Ratio=2.0958
+Physical time=92.0000 s, CPU time=43.8950 s, Time Ratio=2.0959
+Physical time=92.1000 s, CPU time=43.9420 s, Time Ratio=2.0959
+Physical time=92.2000 s, CPU time=43.9880 s, Time Ratio=2.0960
+Physical time=92.3000 s, CPU time=44.0350 s, Time Ratio=2.0961
+Physical time=92.4000 s, CPU time=44.0810 s, Time Ratio=2.0961
+Physical time=92.5000 s, CPU time=44.1280 s, Time Ratio=2.0962
+Physical time=92.6000 s, CPU time=44.1740 s, Time Ratio=2.0963
+Physical time=92.7000 s, CPU time=44.2210 s, Time Ratio=2.0963
+Physical time=92.8000 s, CPU time=44.2670 s, Time Ratio=2.0964
+Physical time=92.9000 s, CPU time=44.3140 s, Time Ratio=2.0964
+Physical time=93.0000 s, CPU time=44.3610 s, Time Ratio=2.0964
+Physical time=93.1000 s, CPU time=44.4070 s, Time Ratio=2.0965
+Physical time=93.2000 s, CPU time=44.4540 s, Time Ratio=2.0965
+Physical time=93.3000 s, CPU time=44.5000 s, Time Ratio=2.0966
+Physical time=93.4000 s, CPU time=44.5460 s, Time Ratio=2.0967
+Physical time=93.5000 s, CPU time=44.5930 s, Time Ratio=2.0967
+Physical time=93.6000 s, CPU time=44.6390 s, Time Ratio=2.0968
+Physical time=93.7000 s, CPU time=44.6850 s, Time Ratio=2.0969
+Physical time=93.8000 s, CPU time=44.7310 s, Time Ratio=2.0970
+Physical time=93.9000 s, CPU time=44.7780 s, Time Ratio=2.0970
+Physical time=94.0000 s, CPU time=44.8240 s, Time Ratio=2.0971
+Physical time=94.1000 s, CPU time=44.8710 s, Time Ratio=2.0971
+Physical time=94.2000 s, CPU time=44.9170 s, Time Ratio=2.0972
+Physical time=94.3000 s, CPU time=44.9630 s, Time Ratio=2.0973
+Physical time=94.4000 s, CPU time=45.0100 s, Time Ratio=2.0973
+Physical time=94.5000 s, CPU time=45.0560 s, Time Ratio=2.0974
+Physical time=94.6000 s, CPU time=45.1030 s, Time Ratio=2.0974
+Physical time=94.7000 s, CPU time=45.1490 s, Time Ratio=2.0975
+Physical time=94.8000 s, CPU time=45.1960 s, Time Ratio=2.0975
+Physical time=94.9000 s, CPU time=45.2430 s, Time Ratio=2.0976
+Physical time=95.0000 s, CPU time=45.2890 s, Time Ratio=2.0976
+Physical time=95.1000 s, CPU time=45.3360 s, Time Ratio=2.0977
+Physical time=95.2000 s, CPU time=45.3830 s, Time Ratio=2.0977
+Physical time=95.3000 s, CPU time=45.4300 s, Time Ratio=2.0977
+Physical time=95.4000 s, CPU time=45.4760 s, Time Ratio=2.0978
+Physical time=95.5000 s, CPU time=45.5230 s, Time Ratio=2.0978
+Physical time=95.6000 s, CPU time=45.5690 s, Time Ratio=2.0979
+Physical time=95.7000 s, CPU time=45.6150 s, Time Ratio=2.0980
+Physical time=95.8000 s, CPU time=45.6620 s, Time Ratio=2.0980
+Physical time=95.9000 s, CPU time=45.7080 s, Time Ratio=2.0981
+Physical time=96.0000 s, CPU time=45.7550 s, Time Ratio=2.0981
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=96.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=96.000000[s]
+	Averaged room temperature 13.285406[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.361385
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.947281[W]
+		East Wall: 3.463367[W]
+		South Wall: 7.051950[W]
+		North Wall: 7.853825[W]
+		Ceiling: 0.029772[W]
+		Floor: -71.216219[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.435406
+		Velocity: 0.655436
+ffd_solver(): Synchronized data at t=96.000000[s]
+
+Physical time=96.1000 s, CPU time=45.8170 s, Time Ratio=2.0975
+Physical time=96.2000 s, CPU time=45.8640 s, Time Ratio=2.0975
+Physical time=96.3000 s, CPU time=45.9100 s, Time Ratio=2.0976
+Physical time=96.4000 s, CPU time=45.9570 s, Time Ratio=2.0976
+Physical time=96.5000 s, CPU time=46.0030 s, Time Ratio=2.0977
+Physical time=96.6000 s, CPU time=46.0500 s, Time Ratio=2.0977
+Physical time=96.7000 s, CPU time=46.0960 s, Time Ratio=2.0978
+Physical time=96.8000 s, CPU time=46.1430 s, Time Ratio=2.0978
+Physical time=96.9000 s, CPU time=46.1890 s, Time Ratio=2.0979
+Physical time=97.0000 s, CPU time=46.2360 s, Time Ratio=2.0979
+Physical time=97.1000 s, CPU time=46.2830 s, Time Ratio=2.0980
+Physical time=97.2000 s, CPU time=46.3290 s, Time Ratio=2.0980
+Physical time=97.3000 s, CPU time=46.3760 s, Time Ratio=2.0981
+Physical time=97.4000 s, CPU time=46.4230 s, Time Ratio=2.0981
+Physical time=97.5000 s, CPU time=46.4690 s, Time Ratio=2.0982
+Physical time=97.6000 s, CPU time=46.5160 s, Time Ratio=2.0982
+Physical time=97.7000 s, CPU time=46.5620 s, Time Ratio=2.0983
+Physical time=97.8000 s, CPU time=46.6110 s, Time Ratio=2.0982
+Physical time=97.9000 s, CPU time=46.6580 s, Time Ratio=2.0982
+Physical time=98.0000 s, CPU time=46.7040 s, Time Ratio=2.0983
+Physical time=98.1000 s, CPU time=46.7510 s, Time Ratio=2.0984
+Physical time=98.2000 s, CPU time=46.7970 s, Time Ratio=2.0984
+Physical time=98.3000 s, CPU time=46.8440 s, Time Ratio=2.0985
+Physical time=98.4000 s, CPU time=46.8900 s, Time Ratio=2.0985
+Physical time=98.5000 s, CPU time=46.9360 s, Time Ratio=2.0986
+Physical time=98.6000 s, CPU time=46.9830 s, Time Ratio=2.0986
+Physical time=98.7000 s, CPU time=47.0290 s, Time Ratio=2.0987
+Physical time=98.8000 s, CPU time=47.0760 s, Time Ratio=2.0987
+Physical time=98.9000 s, CPU time=47.1230 s, Time Ratio=2.0988
+Physical time=99.0000 s, CPU time=47.1690 s, Time Ratio=2.0988
+Physical time=99.1000 s, CPU time=47.2160 s, Time Ratio=2.0989
+Physical time=99.2000 s, CPU time=47.2640 s, Time Ratio=2.0988
+Physical time=99.3000 s, CPU time=47.3100 s, Time Ratio=2.0989
+Physical time=99.4000 s, CPU time=47.3570 s, Time Ratio=2.0990
+Physical time=99.5000 s, CPU time=47.4210 s, Time Ratio=2.0982
+Physical time=99.6000 s, CPU time=47.4670 s, Time Ratio=2.0983
+Physical time=99.7000 s, CPU time=47.5140 s, Time Ratio=2.0983
+Physical time=99.8000 s, CPU time=47.5600 s, Time Ratio=2.0984
+Physical time=99.9000 s, CPU time=47.6060 s, Time Ratio=2.0985
+Physical time=100.0000 s, CPU time=47.6520 s, Time Ratio=2.0985
+Physical time=100.1000 s, CPU time=47.6990 s, Time Ratio=2.0986
+Physical time=100.2000 s, CPU time=47.7450 s, Time Ratio=2.0986
+Physical time=100.3000 s, CPU time=47.7930 s, Time Ratio=2.0986
+Physical time=100.4000 s, CPU time=47.8390 s, Time Ratio=2.0987
+Physical time=100.5000 s, CPU time=47.8860 s, Time Ratio=2.0987
+Physical time=100.6000 s, CPU time=47.9320 s, Time Ratio=2.0988
+Physical time=100.7000 s, CPU time=47.9780 s, Time Ratio=2.0989
+Physical time=100.8000 s, CPU time=48.0250 s, Time Ratio=2.0989
+Physical time=100.9000 s, CPU time=48.0710 s, Time Ratio=2.0990
+Physical time=101.0000 s, CPU time=48.1170 s, Time Ratio=2.0991
+Physical time=101.1000 s, CPU time=48.1630 s, Time Ratio=2.0991
+Physical time=101.2000 s, CPU time=48.2100 s, Time Ratio=2.0991
+Physical time=101.3000 s, CPU time=48.2560 s, Time Ratio=2.0992
+Physical time=101.4000 s, CPU time=48.3030 s, Time Ratio=2.0992
+Physical time=101.5000 s, CPU time=48.3500 s, Time Ratio=2.0993
+Physical time=101.6000 s, CPU time=48.3960 s, Time Ratio=2.0993
+Physical time=101.7000 s, CPU time=48.4420 s, Time Ratio=2.0994
+Physical time=101.8000 s, CPU time=48.4890 s, Time Ratio=2.0994
+Physical time=101.9000 s, CPU time=48.5350 s, Time Ratio=2.0995
+Physical time=102.0000 s, CPU time=48.5810 s, Time Ratio=2.0996
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=102.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=102.000000[s]
+	Averaged room temperature 13.516026[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.420682
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.957638[W]
+		East Wall: 3.978126[W]
+		South Wall: 7.001420[W]
+		North Wall: 7.858340[W]
+		Ceiling: 1.263746[W]
+		Floor: -70.997972[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.666026
+		Velocity: 0.681652
+ffd_solver(): Synchronized data at t=102.000000[s]
+
+Physical time=102.1000 s, CPU time=48.6430 s, Time Ratio=2.0990
+Physical time=102.2000 s, CPU time=48.6890 s, Time Ratio=2.0990
+Physical time=102.3000 s, CPU time=48.7360 s, Time Ratio=2.0991
+Physical time=102.4000 s, CPU time=48.7820 s, Time Ratio=2.0991
+Physical time=102.5000 s, CPU time=48.8280 s, Time Ratio=2.0992
+Physical time=102.6000 s, CPU time=48.8750 s, Time Ratio=2.0992
+Physical time=102.7000 s, CPU time=48.9210 s, Time Ratio=2.0993
+Physical time=102.8000 s, CPU time=48.9680 s, Time Ratio=2.0993
+Physical time=102.9000 s, CPU time=49.0140 s, Time Ratio=2.0994
+Physical time=103.0000 s, CPU time=49.0610 s, Time Ratio=2.0994
+Physical time=103.1000 s, CPU time=49.1070 s, Time Ratio=2.0995
+Physical time=103.2000 s, CPU time=49.1530 s, Time Ratio=2.0996
+Physical time=103.3000 s, CPU time=49.2020 s, Time Ratio=2.0995
+Physical time=103.4000 s, CPU time=49.2490 s, Time Ratio=2.0995
+Physical time=103.5000 s, CPU time=49.2960 s, Time Ratio=2.0996
+Physical time=103.6000 s, CPU time=49.3430 s, Time Ratio=2.0996
+Physical time=103.7000 s, CPU time=49.3890 s, Time Ratio=2.0997
+Physical time=103.8000 s, CPU time=49.4360 s, Time Ratio=2.0997
+Physical time=103.9000 s, CPU time=49.4820 s, Time Ratio=2.0998
+Physical time=104.0000 s, CPU time=49.5290 s, Time Ratio=2.0998
+Physical time=104.1000 s, CPU time=49.5760 s, Time Ratio=2.0998
+Physical time=104.2000 s, CPU time=49.6220 s, Time Ratio=2.0999
+Physical time=104.3000 s, CPU time=49.6690 s, Time Ratio=2.0999
+Physical time=104.4000 s, CPU time=49.7160 s, Time Ratio=2.0999
+Physical time=104.5000 s, CPU time=49.7630 s, Time Ratio=2.1000
+Physical time=104.6000 s, CPU time=49.8100 s, Time Ratio=2.1000
+Physical time=104.7000 s, CPU time=49.8560 s, Time Ratio=2.1000
+Physical time=104.8000 s, CPU time=49.9030 s, Time Ratio=2.1001
+Physical time=104.9000 s, CPU time=49.9500 s, Time Ratio=2.1001
+Physical time=105.0000 s, CPU time=49.9970 s, Time Ratio=2.1001
+Physical time=105.1000 s, CPU time=50.0440 s, Time Ratio=2.1002
+Physical time=105.2000 s, CPU time=50.0900 s, Time Ratio=2.1002
+Physical time=105.3000 s, CPU time=50.1370 s, Time Ratio=2.1002
+Physical time=105.4000 s, CPU time=50.1840 s, Time Ratio=2.1003
+Physical time=105.5000 s, CPU time=50.2300 s, Time Ratio=2.1003
+Physical time=105.6000 s, CPU time=50.2770 s, Time Ratio=2.1004
+Physical time=105.7000 s, CPU time=50.3240 s, Time Ratio=2.1004
+Physical time=105.8000 s, CPU time=50.3700 s, Time Ratio=2.1005
+Physical time=105.9000 s, CPU time=50.4170 s, Time Ratio=2.1005
+Physical time=106.0000 s, CPU time=50.4630 s, Time Ratio=2.1005
+Physical time=106.1000 s, CPU time=50.5090 s, Time Ratio=2.1006
+Physical time=106.2000 s, CPU time=50.5560 s, Time Ratio=2.1006
+Physical time=106.3000 s, CPU time=50.6020 s, Time Ratio=2.1007
+Physical time=106.4000 s, CPU time=50.6480 s, Time Ratio=2.1008
+Physical time=106.5000 s, CPU time=50.6950 s, Time Ratio=2.1008
+Physical time=106.6000 s, CPU time=50.7420 s, Time Ratio=2.1008
+Physical time=106.7000 s, CPU time=50.7890 s, Time Ratio=2.1008
+Physical time=106.8000 s, CPU time=50.8350 s, Time Ratio=2.1009
+Physical time=106.9000 s, CPU time=50.8820 s, Time Ratio=2.1009
+Physical time=107.0000 s, CPU time=50.9280 s, Time Ratio=2.1010
+Physical time=107.1000 s, CPU time=50.9750 s, Time Ratio=2.1010
+Physical time=107.2000 s, CPU time=51.0210 s, Time Ratio=2.1011
+Physical time=107.3000 s, CPU time=51.0680 s, Time Ratio=2.1011
+Physical time=107.4000 s, CPU time=51.1140 s, Time Ratio=2.1012
+Physical time=107.5000 s, CPU time=51.1610 s, Time Ratio=2.1012
+Physical time=107.6000 s, CPU time=51.2080 s, Time Ratio=2.1012
+Physical time=107.7000 s, CPU time=51.2550 s, Time Ratio=2.1013
+Physical time=107.8000 s, CPU time=51.3020 s, Time Ratio=2.1013
+Physical time=107.9000 s, CPU time=51.3490 s, Time Ratio=2.1013
+Physical time=108.0000 s, CPU time=51.3960 s, Time Ratio=2.1013
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=108.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=108.000000[s]
+	Averaged room temperature 13.753868[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.485325
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.345848[W]
+		East Wall: 4.644370[W]
+		South Wall: 7.222221[W]
+		North Wall: 8.141044[W]
+		Ceiling: 2.663761[W]
+		Floor: -71.789663[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.903868
+		Velocity: 0.690335
+ffd_solver(): Synchronized data at t=108.000000[s]
+
+Physical time=108.1000 s, CPU time=51.4580 s, Time Ratio=2.1007
+Physical time=108.2000 s, CPU time=51.5050 s, Time Ratio=2.1008
+Physical time=108.3000 s, CPU time=51.5510 s, Time Ratio=2.1008
+Physical time=108.4000 s, CPU time=51.5980 s, Time Ratio=2.1009
+Physical time=108.5000 s, CPU time=51.6440 s, Time Ratio=2.1009
+Physical time=108.6000 s, CPU time=51.6900 s, Time Ratio=2.1010
+Physical time=108.7000 s, CPU time=51.7370 s, Time Ratio=2.1010
+Physical time=108.8000 s, CPU time=51.7830 s, Time Ratio=2.1011
+Physical time=108.9000 s, CPU time=51.8300 s, Time Ratio=2.1011
+Physical time=109.0000 s, CPU time=51.8760 s, Time Ratio=2.1012
+Physical time=109.1000 s, CPU time=51.9220 s, Time Ratio=2.1012
+Physical time=109.2000 s, CPU time=51.9690 s, Time Ratio=2.1013
+Physical time=109.3000 s, CPU time=52.0160 s, Time Ratio=2.1013
+Physical time=109.4000 s, CPU time=52.0630 s, Time Ratio=2.1013
+Physical time=109.5000 s, CPU time=52.1100 s, Time Ratio=2.1013
+Physical time=109.6000 s, CPU time=52.1580 s, Time Ratio=2.1013
+Physical time=109.7000 s, CPU time=52.2050 s, Time Ratio=2.1013
+Physical time=109.8000 s, CPU time=52.2520 s, Time Ratio=2.1014
+Physical time=109.9000 s, CPU time=52.2990 s, Time Ratio=2.1014
+Physical time=110.0000 s, CPU time=52.3460 s, Time Ratio=2.1014
+Physical time=110.1000 s, CPU time=52.3930 s, Time Ratio=2.1014
+Physical time=110.2000 s, CPU time=52.4390 s, Time Ratio=2.1015
+Physical time=110.3000 s, CPU time=52.4850 s, Time Ratio=2.1016
+Physical time=110.4000 s, CPU time=52.5320 s, Time Ratio=2.1016
+Physical time=110.5000 s, CPU time=52.5790 s, Time Ratio=2.1016
+Physical time=110.6000 s, CPU time=52.6250 s, Time Ratio=2.1017
+Physical time=110.7000 s, CPU time=52.6720 s, Time Ratio=2.1017
+Physical time=110.8000 s, CPU time=52.7180 s, Time Ratio=2.1017
+Physical time=110.9000 s, CPU time=52.7650 s, Time Ratio=2.1018
+Physical time=111.0000 s, CPU time=52.8110 s, Time Ratio=2.1018
+Physical time=111.1000 s, CPU time=52.8580 s, Time Ratio=2.1019
+Physical time=111.2000 s, CPU time=52.9040 s, Time Ratio=2.1019
+Physical time=111.3000 s, CPU time=52.9500 s, Time Ratio=2.1020
+Physical time=111.4000 s, CPU time=52.9970 s, Time Ratio=2.1020
+Physical time=111.5000 s, CPU time=53.0430 s, Time Ratio=2.1021
+Physical time=111.6000 s, CPU time=53.0900 s, Time Ratio=2.1021
+Physical time=111.7000 s, CPU time=53.1370 s, Time Ratio=2.1021
+Physical time=111.8000 s, CPU time=53.1830 s, Time Ratio=2.1022
+Physical time=111.9000 s, CPU time=53.2300 s, Time Ratio=2.1022
+Physical time=112.0000 s, CPU time=53.2770 s, Time Ratio=2.1022
+Physical time=112.1000 s, CPU time=53.3230 s, Time Ratio=2.1023
+Physical time=112.2000 s, CPU time=53.3690 s, Time Ratio=2.1023
+Physical time=112.3000 s, CPU time=53.4220 s, Time Ratio=2.1021
+Physical time=112.4000 s, CPU time=53.4690 s, Time Ratio=2.1022
+Physical time=112.5000 s, CPU time=53.5150 s, Time Ratio=2.1022
+Physical time=112.6000 s, CPU time=53.5610 s, Time Ratio=2.1023
+Physical time=112.7000 s, CPU time=53.6070 s, Time Ratio=2.1023
+Physical time=112.8000 s, CPU time=53.6640 s, Time Ratio=2.1020
+Physical time=112.9000 s, CPU time=53.7220 s, Time Ratio=2.1016
+Physical time=113.0000 s, CPU time=53.7720 s, Time Ratio=2.1015
+Physical time=113.1000 s, CPU time=53.8180 s, Time Ratio=2.1015
+Physical time=113.2000 s, CPU time=53.8640 s, Time Ratio=2.1016
+Physical time=113.3000 s, CPU time=53.9110 s, Time Ratio=2.1016
+Physical time=113.4000 s, CPU time=53.9570 s, Time Ratio=2.1017
+Physical time=113.5000 s, CPU time=54.0030 s, Time Ratio=2.1017
+Physical time=113.6000 s, CPU time=54.0500 s, Time Ratio=2.1018
+Physical time=113.7000 s, CPU time=54.0960 s, Time Ratio=2.1018
+Physical time=113.8000 s, CPU time=54.1430 s, Time Ratio=2.1018
+Physical time=113.9000 s, CPU time=54.1900 s, Time Ratio=2.1019
+Physical time=114.0000 s, CPU time=54.2360 s, Time Ratio=2.1019
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=114.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=114.000000[s]
+	Averaged room temperature 13.489822[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.447786
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.010355[W]
+		East Wall: 3.644992[W]
+		South Wall: 7.066779[W]
+		North Wall: 8.320117[W]
+		Ceiling: 0.092584[W]
+		Floor: -71.898708[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.639822
+		Velocity: 0.665418
+ffd_solver(): Synchronized data at t=114.000000[s]
+
+Physical time=114.1000 s, CPU time=54.3000 s, Time Ratio=2.1013
+Physical time=114.2000 s, CPU time=54.3470 s, Time Ratio=2.1013
+Physical time=114.3000 s, CPU time=54.3930 s, Time Ratio=2.1014
+Physical time=114.4000 s, CPU time=54.4400 s, Time Ratio=2.1014
+Physical time=114.5000 s, CPU time=54.4860 s, Time Ratio=2.1015
+Physical time=114.6000 s, CPU time=54.5330 s, Time Ratio=2.1015
+Physical time=114.7000 s, CPU time=54.5790 s, Time Ratio=2.1015
+Physical time=114.8000 s, CPU time=54.6260 s, Time Ratio=2.1016
+Physical time=114.9000 s, CPU time=54.6720 s, Time Ratio=2.1016
+Physical time=115.0000 s, CPU time=54.7190 s, Time Ratio=2.1016
+Physical time=115.1000 s, CPU time=54.7660 s, Time Ratio=2.1017
+Physical time=115.2000 s, CPU time=54.8120 s, Time Ratio=2.1017
+Physical time=115.3000 s, CPU time=54.8580 s, Time Ratio=2.1018
+Physical time=115.4000 s, CPU time=54.9050 s, Time Ratio=2.1018
+Physical time=115.5000 s, CPU time=54.9510 s, Time Ratio=2.1019
+Physical time=115.6000 s, CPU time=54.9970 s, Time Ratio=2.1019
+Physical time=115.7000 s, CPU time=55.0440 s, Time Ratio=2.1020
+Physical time=115.8000 s, CPU time=55.0900 s, Time Ratio=2.1020
+Physical time=115.9000 s, CPU time=55.1370 s, Time Ratio=2.1020
+Physical time=116.0000 s, CPU time=55.1830 s, Time Ratio=2.1021
+Physical time=116.1000 s, CPU time=55.2300 s, Time Ratio=2.1021
+Physical time=116.2000 s, CPU time=55.2770 s, Time Ratio=2.1021
+Physical time=116.3000 s, CPU time=55.3240 s, Time Ratio=2.1022
+Physical time=116.4000 s, CPU time=55.3720 s, Time Ratio=2.1021
+Physical time=116.5000 s, CPU time=55.4180 s, Time Ratio=2.1022
+Physical time=116.6000 s, CPU time=55.4660 s, Time Ratio=2.1022
+Physical time=116.7000 s, CPU time=55.5130 s, Time Ratio=2.1022
+Physical time=116.8000 s, CPU time=55.5590 s, Time Ratio=2.1023
+Physical time=116.9000 s, CPU time=55.6060 s, Time Ratio=2.1023
+Physical time=117.0000 s, CPU time=55.6520 s, Time Ratio=2.1024
+Physical time=117.1000 s, CPU time=55.6990 s, Time Ratio=2.1024
+Physical time=117.2000 s, CPU time=55.7450 s, Time Ratio=2.1024
+Physical time=117.3000 s, CPU time=55.7920 s, Time Ratio=2.1025
+Physical time=117.4000 s, CPU time=55.8380 s, Time Ratio=2.1025
+Physical time=117.5000 s, CPU time=55.8850 s, Time Ratio=2.1025
+Physical time=117.6000 s, CPU time=55.9320 s, Time Ratio=2.1026
+Physical time=117.7000 s, CPU time=55.9790 s, Time Ratio=2.1026
+Physical time=117.8000 s, CPU time=56.0260 s, Time Ratio=2.1026
+Physical time=117.9000 s, CPU time=56.0720 s, Time Ratio=2.1027
+Physical time=118.0000 s, CPU time=56.1190 s, Time Ratio=2.1027
+Physical time=118.1000 s, CPU time=56.1650 s, Time Ratio=2.1027
+Physical time=118.2000 s, CPU time=56.2120 s, Time Ratio=2.1028
+Physical time=118.3000 s, CPU time=56.2580 s, Time Ratio=2.1028
+Physical time=118.4000 s, CPU time=56.3050 s, Time Ratio=2.1028
+Physical time=118.5000 s, CPU time=56.3520 s, Time Ratio=2.1029
+Physical time=118.6000 s, CPU time=56.3980 s, Time Ratio=2.1029
+Physical time=118.7000 s, CPU time=56.4440 s, Time Ratio=2.1030
+Physical time=118.8000 s, CPU time=56.4910 s, Time Ratio=2.1030
+Physical time=118.9000 s, CPU time=56.5380 s, Time Ratio=2.1030
+Physical time=119.0000 s, CPU time=56.5850 s, Time Ratio=2.1030
+Physical time=119.1000 s, CPU time=56.6310 s, Time Ratio=2.1031
+Physical time=119.2000 s, CPU time=56.6780 s, Time Ratio=2.1031
+Physical time=119.3000 s, CPU time=56.7240 s, Time Ratio=2.1032
+Physical time=119.4000 s, CPU time=56.7710 s, Time Ratio=2.1032
+Physical time=119.5000 s, CPU time=56.8170 s, Time Ratio=2.1032
+Physical time=119.6000 s, CPU time=56.8630 s, Time Ratio=2.1033
+Physical time=119.7000 s, CPU time=56.9100 s, Time Ratio=2.1033
+Physical time=119.8000 s, CPU time=56.9560 s, Time Ratio=2.1034
+Physical time=119.9000 s, CPU time=57.0030 s, Time Ratio=2.1034
+Physical time=120.0000 s, CPU time=57.0490 s, Time Ratio=2.1035
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=120.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=120.000000[s]
+	Averaged room temperature 13.390033[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.445210
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.305846[W]
+		East Wall: 3.857038[W]
+		South Wall: 7.303110[W]
+		North Wall: 7.973995[W]
+		Ceiling: 0.142310[W]
+		Floor: -71.886057[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.540033
+		Velocity: 0.655013
+ffd_solver(): Synchronized data at t=120.000000[s]
+
+Physical time=120.1000 s, CPU time=57.1140 s, Time Ratio=2.1028
+Physical time=120.2000 s, CPU time=57.1610 s, Time Ratio=2.1028
+Physical time=120.3000 s, CPU time=57.2070 s, Time Ratio=2.1029
+Physical time=120.4000 s, CPU time=57.2540 s, Time Ratio=2.1029
+Physical time=120.5000 s, CPU time=57.3000 s, Time Ratio=2.1030
+Physical time=120.6000 s, CPU time=57.3490 s, Time Ratio=2.1029
+Physical time=120.7000 s, CPU time=57.3950 s, Time Ratio=2.1030
+Physical time=120.8000 s, CPU time=57.4410 s, Time Ratio=2.1030
+Physical time=120.9000 s, CPU time=57.4880 s, Time Ratio=2.1030
+Physical time=121.0000 s, CPU time=57.5350 s, Time Ratio=2.1031
+Physical time=121.1000 s, CPU time=57.5810 s, Time Ratio=2.1031
+Physical time=121.2000 s, CPU time=57.6280 s, Time Ratio=2.1031
+Physical time=121.3000 s, CPU time=57.6740 s, Time Ratio=2.1032
+Physical time=121.4000 s, CPU time=57.7210 s, Time Ratio=2.1032
+Physical time=121.5000 s, CPU time=57.7680 s, Time Ratio=2.1032
+Physical time=121.6000 s, CPU time=57.8140 s, Time Ratio=2.1033
+Physical time=121.7000 s, CPU time=57.8610 s, Time Ratio=2.1033
+Physical time=121.8000 s, CPU time=57.9080 s, Time Ratio=2.1033
+Physical time=121.9000 s, CPU time=57.9540 s, Time Ratio=2.1034
+Physical time=122.0000 s, CPU time=58.0010 s, Time Ratio=2.1034
+Physical time=122.1000 s, CPU time=58.0480 s, Time Ratio=2.1034
+Physical time=122.2000 s, CPU time=58.0940 s, Time Ratio=2.1035
+Physical time=122.3000 s, CPU time=58.1410 s, Time Ratio=2.1035
+Physical time=122.4000 s, CPU time=58.1870 s, Time Ratio=2.1036
+Physical time=122.5000 s, CPU time=58.2340 s, Time Ratio=2.1036
+Physical time=122.6000 s, CPU time=58.2800 s, Time Ratio=2.1036
+Physical time=122.7000 s, CPU time=58.3270 s, Time Ratio=2.1037
+Physical time=122.8000 s, CPU time=58.3740 s, Time Ratio=2.1037
+Physical time=122.9000 s, CPU time=58.4200 s, Time Ratio=2.1037
+Physical time=123.0000 s, CPU time=58.4670 s, Time Ratio=2.1038
+Physical time=123.1000 s, CPU time=58.5140 s, Time Ratio=2.1038
+Physical time=123.2000 s, CPU time=58.5610 s, Time Ratio=2.1038
+Physical time=123.3000 s, CPU time=58.6070 s, Time Ratio=2.1038
+Physical time=123.4000 s, CPU time=58.6540 s, Time Ratio=2.1039
+Physical time=123.5000 s, CPU time=58.7000 s, Time Ratio=2.1039
+Physical time=123.6000 s, CPU time=58.7460 s, Time Ratio=2.1040
+Physical time=123.7000 s, CPU time=58.7930 s, Time Ratio=2.1040
+Physical time=123.8000 s, CPU time=58.8400 s, Time Ratio=2.1040
+Physical time=123.9000 s, CPU time=58.8860 s, Time Ratio=2.1041
+Physical time=124.0000 s, CPU time=58.9320 s, Time Ratio=2.1041
+Physical time=124.1000 s, CPU time=58.9790 s, Time Ratio=2.1041
+Physical time=124.2000 s, CPU time=59.0260 s, Time Ratio=2.1042
+Physical time=124.3000 s, CPU time=59.0730 s, Time Ratio=2.1042
+Physical time=124.4000 s, CPU time=59.1190 s, Time Ratio=2.1042
+Physical time=124.5000 s, CPU time=59.1650 s, Time Ratio=2.1043
+Physical time=124.6000 s, CPU time=59.2120 s, Time Ratio=2.1043
+Physical time=124.7000 s, CPU time=59.2580 s, Time Ratio=2.1044
+Physical time=124.8000 s, CPU time=59.3040 s, Time Ratio=2.1044
+Physical time=124.9000 s, CPU time=59.3500 s, Time Ratio=2.1045
+Physical time=125.0000 s, CPU time=59.4460 s, Time Ratio=2.1027
+Physical time=125.1000 s, CPU time=59.4930 s, Time Ratio=2.1028
+Physical time=125.2000 s, CPU time=59.5400 s, Time Ratio=2.1028
+Physical time=125.3000 s, CPU time=59.5870 s, Time Ratio=2.1028
+Physical time=125.4000 s, CPU time=59.6330 s, Time Ratio=2.1029
+Physical time=125.5000 s, CPU time=59.6790 s, Time Ratio=2.1029
+Physical time=125.6000 s, CPU time=59.7260 s, Time Ratio=2.1029
+Physical time=125.7000 s, CPU time=59.7720 s, Time Ratio=2.1030
+Physical time=125.8000 s, CPU time=59.8180 s, Time Ratio=2.1030
+Physical time=125.9000 s, CPU time=59.8640 s, Time Ratio=2.1031
+Physical time=126.0000 s, CPU time=59.9100 s, Time Ratio=2.1032
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=126.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=126.000000[s]
+	Averaged room temperature 13.384466[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.425613
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.531747[W]
+		East Wall: 3.189414[W]
+		South Wall: 7.213865[W]
+		North Wall: 7.964099[W]
+		Ceiling: 0.077636[W]
+		Floor: -71.922568[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.534466
+		Velocity: 0.676425
+ffd_solver(): Synchronized data at t=126.000000[s]
+
+Physical time=126.1000 s, CPU time=59.9720 s, Time Ratio=2.1026
+Physical time=126.2000 s, CPU time=60.0190 s, Time Ratio=2.1027
+Physical time=126.3000 s, CPU time=60.0660 s, Time Ratio=2.1027
+Physical time=126.4000 s, CPU time=60.1120 s, Time Ratio=2.1027
+Physical time=126.5000 s, CPU time=60.1590 s, Time Ratio=2.1028
+Physical time=126.6000 s, CPU time=60.2060 s, Time Ratio=2.1028
+Physical time=126.7000 s, CPU time=60.2520 s, Time Ratio=2.1028
+Physical time=126.8000 s, CPU time=60.2990 s, Time Ratio=2.1029
+Physical time=126.9000 s, CPU time=60.3450 s, Time Ratio=2.1029
+Physical time=127.0000 s, CPU time=60.3920 s, Time Ratio=2.1029
+Physical time=127.1000 s, CPU time=60.4400 s, Time Ratio=2.1029
+Physical time=127.2000 s, CPU time=60.4870 s, Time Ratio=2.1029
+Physical time=127.3000 s, CPU time=60.5340 s, Time Ratio=2.1030
+Physical time=127.4000 s, CPU time=60.5810 s, Time Ratio=2.1030
+Physical time=127.5000 s, CPU time=60.6270 s, Time Ratio=2.1030
+Physical time=127.6000 s, CPU time=60.6740 s, Time Ratio=2.1030
+Physical time=127.7000 s, CPU time=60.7200 s, Time Ratio=2.1031
+Physical time=127.8000 s, CPU time=60.7670 s, Time Ratio=2.1031
+Physical time=127.9000 s, CPU time=60.8130 s, Time Ratio=2.1032
+Physical time=128.0000 s, CPU time=60.8600 s, Time Ratio=2.1032
+Physical time=128.1000 s, CPU time=60.9070 s, Time Ratio=2.1032
+Physical time=128.2000 s, CPU time=60.9540 s, Time Ratio=2.1032
+Physical time=128.3000 s, CPU time=61.0010 s, Time Ratio=2.1032
+Physical time=128.4000 s, CPU time=61.0470 s, Time Ratio=2.1033
+Physical time=128.5000 s, CPU time=61.0940 s, Time Ratio=2.1033
+Physical time=128.6000 s, CPU time=61.1400 s, Time Ratio=2.1034
+Physical time=128.7000 s, CPU time=61.1870 s, Time Ratio=2.1034
+Physical time=128.8000 s, CPU time=61.2330 s, Time Ratio=2.1034
+Physical time=128.9000 s, CPU time=61.2790 s, Time Ratio=2.1035
+Physical time=129.0000 s, CPU time=61.3260 s, Time Ratio=2.1035
+Physical time=129.1000 s, CPU time=61.3730 s, Time Ratio=2.1035
+Physical time=129.2000 s, CPU time=61.4200 s, Time Ratio=2.1035
+Physical time=129.3000 s, CPU time=61.4670 s, Time Ratio=2.1036
+Physical time=129.4000 s, CPU time=61.5130 s, Time Ratio=2.1036
+Physical time=129.5000 s, CPU time=61.5600 s, Time Ratio=2.1036
+Physical time=129.6000 s, CPU time=61.6070 s, Time Ratio=2.1037
+Physical time=129.7000 s, CPU time=61.6540 s, Time Ratio=2.1037
+Physical time=129.8000 s, CPU time=61.7000 s, Time Ratio=2.1037
+Physical time=129.9000 s, CPU time=61.7470 s, Time Ratio=2.1037
+Physical time=130.0000 s, CPU time=61.7930 s, Time Ratio=2.1038
+Physical time=130.1000 s, CPU time=61.8400 s, Time Ratio=2.1038
+Physical time=130.2000 s, CPU time=61.8860 s, Time Ratio=2.1039
+Physical time=130.3000 s, CPU time=61.9330 s, Time Ratio=2.1039
+Physical time=130.4000 s, CPU time=61.9800 s, Time Ratio=2.1039
+Physical time=130.5000 s, CPU time=62.0260 s, Time Ratio=2.1040
+Physical time=130.6000 s, CPU time=62.0730 s, Time Ratio=2.1040
+Physical time=130.7000 s, CPU time=62.1190 s, Time Ratio=2.1040
+Physical time=130.8000 s, CPU time=62.1660 s, Time Ratio=2.1040
+Physical time=130.9000 s, CPU time=62.2120 s, Time Ratio=2.1041
+Physical time=131.0000 s, CPU time=62.2590 s, Time Ratio=2.1041
+Physical time=131.1000 s, CPU time=62.3050 s, Time Ratio=2.1042
+Physical time=131.2000 s, CPU time=62.3520 s, Time Ratio=2.1042
+Physical time=131.3000 s, CPU time=62.3980 s, Time Ratio=2.1042
+Physical time=131.4000 s, CPU time=62.4450 s, Time Ratio=2.1043
+Physical time=131.5000 s, CPU time=62.4920 s, Time Ratio=2.1043
+Physical time=131.6000 s, CPU time=62.5380 s, Time Ratio=2.1043
+Physical time=131.7000 s, CPU time=62.5850 s, Time Ratio=2.1043
+Physical time=131.8000 s, CPU time=62.6320 s, Time Ratio=2.1044
+Physical time=131.9000 s, CPU time=62.6780 s, Time Ratio=2.1044
+Physical time=132.0000 s, CPU time=62.7240 s, Time Ratio=2.1045
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=132.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=132.000000[s]
+	Averaged room temperature 13.138459[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.447202
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 6.845907[W]
+		East Wall: 4.074267[W]
+		South Wall: 7.358944[W]
+		North Wall: 7.731016[W]
+		Ceiling: 0.022824[W]
+		Floor: -71.432034[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.288459
+		Velocity: 0.656869
+ffd_solver(): Synchronized data at t=132.000000[s]
+
+Physical time=132.1000 s, CPU time=62.8040 s, Time Ratio=2.1034
+Physical time=132.2000 s, CPU time=62.8510 s, Time Ratio=2.1034
+Physical time=132.3000 s, CPU time=62.8980 s, Time Ratio=2.1034
+Physical time=132.4000 s, CPU time=62.9460 s, Time Ratio=2.1034
+Physical time=132.5000 s, CPU time=62.9990 s, Time Ratio=2.1032
+Physical time=132.6000 s, CPU time=63.0460 s, Time Ratio=2.1032
+Physical time=132.7000 s, CPU time=63.0920 s, Time Ratio=2.1033
+Physical time=132.8000 s, CPU time=63.1390 s, Time Ratio=2.1033
+Physical time=132.9000 s, CPU time=63.1850 s, Time Ratio=2.1033
+Physical time=133.0000 s, CPU time=63.2310 s, Time Ratio=2.1034
+Physical time=133.1000 s, CPU time=63.2780 s, Time Ratio=2.1034
+Physical time=133.2000 s, CPU time=63.3240 s, Time Ratio=2.1035
+Physical time=133.3000 s, CPU time=63.3710 s, Time Ratio=2.1035
+Physical time=133.4000 s, CPU time=63.4170 s, Time Ratio=2.1035
+Physical time=133.5000 s, CPU time=63.4640 s, Time Ratio=2.1036
+Physical time=133.6000 s, CPU time=63.5120 s, Time Ratio=2.1035
+Physical time=133.7000 s, CPU time=63.5590 s, Time Ratio=2.1036
+Physical time=133.8000 s, CPU time=63.6060 s, Time Ratio=2.1036
+Physical time=133.9000 s, CPU time=63.6530 s, Time Ratio=2.1036
+Physical time=134.0000 s, CPU time=63.7000 s, Time Ratio=2.1036
+Physical time=134.1000 s, CPU time=63.7460 s, Time Ratio=2.1037
+Physical time=134.2000 s, CPU time=63.7930 s, Time Ratio=2.1037
+Physical time=134.3000 s, CPU time=63.8390 s, Time Ratio=2.1037
+Physical time=134.4000 s, CPU time=63.8850 s, Time Ratio=2.1038
+Physical time=134.5000 s, CPU time=63.9320 s, Time Ratio=2.1038
+Physical time=134.6000 s, CPU time=63.9780 s, Time Ratio=2.1038
+Physical time=134.7000 s, CPU time=64.0250 s, Time Ratio=2.1039
+Physical time=134.8000 s, CPU time=64.0720 s, Time Ratio=2.1039
+Physical time=134.9000 s, CPU time=64.1180 s, Time Ratio=2.1039
+Physical time=135.0000 s, CPU time=64.1650 s, Time Ratio=2.1040
+Physical time=135.1000 s, CPU time=64.2110 s, Time Ratio=2.1040
+Physical time=135.2000 s, CPU time=64.2580 s, Time Ratio=2.1040
+Physical time=135.3000 s, CPU time=64.3050 s, Time Ratio=2.1040
+Physical time=135.4000 s, CPU time=64.3510 s, Time Ratio=2.1041
+Physical time=135.5000 s, CPU time=64.3980 s, Time Ratio=2.1041
+Physical time=135.6000 s, CPU time=64.4440 s, Time Ratio=2.1042
+Physical time=135.7000 s, CPU time=64.4910 s, Time Ratio=2.1042
+Physical time=135.8000 s, CPU time=64.5380 s, Time Ratio=2.1042
+Physical time=135.9000 s, CPU time=64.5840 s, Time Ratio=2.1042
+Physical time=136.0000 s, CPU time=64.6300 s, Time Ratio=2.1043
+Physical time=136.1000 s, CPU time=64.6770 s, Time Ratio=2.1043
+Physical time=136.2000 s, CPU time=64.7240 s, Time Ratio=2.1043
+Physical time=136.3000 s, CPU time=64.7700 s, Time Ratio=2.1044
+Physical time=136.4000 s, CPU time=64.8170 s, Time Ratio=2.1044
+Physical time=136.5000 s, CPU time=64.8640 s, Time Ratio=2.1044
+Physical time=136.6000 s, CPU time=64.9100 s, Time Ratio=2.1045
+Physical time=136.7000 s, CPU time=64.9570 s, Time Ratio=2.1045
+Physical time=136.8000 s, CPU time=65.0030 s, Time Ratio=2.1045
+Physical time=136.9000 s, CPU time=65.0500 s, Time Ratio=2.1045
+Physical time=137.0000 s, CPU time=65.0960 s, Time Ratio=2.1046
+Physical time=137.1000 s, CPU time=65.1430 s, Time Ratio=2.1046
+Physical time=137.2000 s, CPU time=65.1890 s, Time Ratio=2.1046
+Physical time=137.3000 s, CPU time=65.2360 s, Time Ratio=2.1047
+Physical time=137.4000 s, CPU time=65.2820 s, Time Ratio=2.1047
+Physical time=137.5000 s, CPU time=65.3290 s, Time Ratio=2.1047
+Physical time=137.6000 s, CPU time=65.3770 s, Time Ratio=2.1047
+Physical time=137.7000 s, CPU time=65.4230 s, Time Ratio=2.1048
+Physical time=137.8000 s, CPU time=65.4700 s, Time Ratio=2.1048
+Physical time=137.9000 s, CPU time=65.5160 s, Time Ratio=2.1048
+Physical time=138.0000 s, CPU time=65.5630 s, Time Ratio=2.1048
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=138.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=138.000000[s]
+	Averaged room temperature 13.136104[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.297966
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.370754[W]
+		East Wall: 2.877163[W]
+		South Wall: 7.362191[W]
+		North Wall: 7.160850[W]
+		Ceiling: 0.029570[W]
+		Floor: -71.710771[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.286104
+		Velocity: 0.625933
+ffd_solver(): Synchronized data at t=138.000000[s]
+
+Physical time=138.1000 s, CPU time=65.6270 s, Time Ratio=2.1043
+Physical time=138.2000 s, CPU time=65.6740 s, Time Ratio=2.1043
+Physical time=138.3000 s, CPU time=65.7210 s, Time Ratio=2.1044
+Physical time=138.4000 s, CPU time=65.7680 s, Time Ratio=2.1044
+Physical time=138.5000 s, CPU time=65.8140 s, Time Ratio=2.1044
+Physical time=138.6000 s, CPU time=65.8610 s, Time Ratio=2.1044
+Physical time=138.7000 s, CPU time=65.9070 s, Time Ratio=2.1045
+Physical time=138.8000 s, CPU time=65.9540 s, Time Ratio=2.1045
+Physical time=138.9000 s, CPU time=66.0010 s, Time Ratio=2.1045
+Physical time=139.0000 s, CPU time=66.0470 s, Time Ratio=2.1046
+Physical time=139.1000 s, CPU time=66.0940 s, Time Ratio=2.1046
+Physical time=139.2000 s, CPU time=66.1400 s, Time Ratio=2.1046
+Physical time=139.3000 s, CPU time=66.1870 s, Time Ratio=2.1046
+Physical time=139.4000 s, CPU time=66.2330 s, Time Ratio=2.1047
+Physical time=139.5000 s, CPU time=66.2800 s, Time Ratio=2.1047
+Physical time=139.6000 s, CPU time=66.3260 s, Time Ratio=2.1048
+Physical time=139.7000 s, CPU time=66.3720 s, Time Ratio=2.1048
+Physical time=139.8000 s, CPU time=66.4190 s, Time Ratio=2.1048
+Physical time=139.9000 s, CPU time=66.4660 s, Time Ratio=2.1048
+Physical time=140.0000 s, CPU time=66.5130 s, Time Ratio=2.1049
+Physical time=140.1000 s, CPU time=66.5600 s, Time Ratio=2.1049
+Physical time=140.2000 s, CPU time=66.6080 s, Time Ratio=2.1049
+Physical time=140.3000 s, CPU time=66.6550 s, Time Ratio=2.1049
+Physical time=140.4000 s, CPU time=66.7010 s, Time Ratio=2.1049
+Physical time=140.5000 s, CPU time=66.7480 s, Time Ratio=2.1049
+Physical time=140.6000 s, CPU time=66.7940 s, Time Ratio=2.1050
+Physical time=140.7000 s, CPU time=66.8400 s, Time Ratio=2.1050
+Physical time=140.8000 s, CPU time=66.8860 s, Time Ratio=2.1051
+Physical time=140.9000 s, CPU time=66.9320 s, Time Ratio=2.1051
+Physical time=141.0000 s, CPU time=66.9790 s, Time Ratio=2.1051
+Physical time=141.1000 s, CPU time=67.0260 s, Time Ratio=2.1052
+Physical time=141.2000 s, CPU time=67.0720 s, Time Ratio=2.1052
+Physical time=141.3000 s, CPU time=67.1190 s, Time Ratio=2.1052
+Physical time=141.4000 s, CPU time=67.1650 s, Time Ratio=2.1053
+Physical time=141.5000 s, CPU time=67.2110 s, Time Ratio=2.1053
+Physical time=141.6000 s, CPU time=67.2580 s, Time Ratio=2.1053
+Physical time=141.7000 s, CPU time=67.3050 s, Time Ratio=2.1053
+Physical time=141.8000 s, CPU time=67.3510 s, Time Ratio=2.1054
+Physical time=141.9000 s, CPU time=67.3980 s, Time Ratio=2.1054
+Physical time=142.0000 s, CPU time=67.4440 s, Time Ratio=2.1055
+Physical time=142.1000 s, CPU time=67.4900 s, Time Ratio=2.1055
+Physical time=142.2000 s, CPU time=67.5360 s, Time Ratio=2.1055
+Physical time=142.3000 s, CPU time=67.5820 s, Time Ratio=2.1056
+Physical time=142.4000 s, CPU time=67.6290 s, Time Ratio=2.1056
+Physical time=142.5000 s, CPU time=67.6750 s, Time Ratio=2.1057
+Physical time=142.6000 s, CPU time=67.7220 s, Time Ratio=2.1057
+Physical time=142.7000 s, CPU time=67.7690 s, Time Ratio=2.1057
+Physical time=142.8000 s, CPU time=67.8160 s, Time Ratio=2.1057
+Physical time=142.9000 s, CPU time=67.8620 s, Time Ratio=2.1057
+Physical time=143.0000 s, CPU time=67.9080 s, Time Ratio=2.1058
+Physical time=143.1000 s, CPU time=67.9550 s, Time Ratio=2.1058
+Physical time=143.2000 s, CPU time=68.0010 s, Time Ratio=2.1059
+Physical time=143.3000 s, CPU time=68.0480 s, Time Ratio=2.1059
+Physical time=143.4000 s, CPU time=68.0940 s, Time Ratio=2.1059
+Physical time=143.5000 s, CPU time=68.1410 s, Time Ratio=2.1059
+Physical time=143.6000 s, CPU time=68.1870 s, Time Ratio=2.1060
+Physical time=143.7000 s, CPU time=68.2330 s, Time Ratio=2.1060
+Physical time=143.8000 s, CPU time=68.2790 s, Time Ratio=2.1061
+Physical time=143.9000 s, CPU time=68.3260 s, Time Ratio=2.1061
+Physical time=144.0000 s, CPU time=68.3730 s, Time Ratio=2.1061
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=144.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=144.000000[s]
+	Averaged room temperature 12.894530[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.268717
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.142388[W]
+		East Wall: 3.804341[W]
+		South Wall: 6.979312[W]
+		North Wall: 7.639051[W]
+		Ceiling: 0.021093[W]
+		Floor: -71.238948[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.044530
+		Velocity: 0.610590
+ffd_solver(): Synchronized data at t=144.000000[s]
+
+Physical time=144.1000 s, CPU time=68.4370 s, Time Ratio=2.1056
+Physical time=144.2000 s, CPU time=68.4830 s, Time Ratio=2.1056
+Physical time=144.3000 s, CPU time=68.5300 s, Time Ratio=2.1056
+Physical time=144.4000 s, CPU time=68.5760 s, Time Ratio=2.1057
+Physical time=144.5000 s, CPU time=68.6220 s, Time Ratio=2.1057
+Physical time=144.6000 s, CPU time=68.6690 s, Time Ratio=2.1058
+Physical time=144.7000 s, CPU time=68.7150 s, Time Ratio=2.1058
+Physical time=144.8000 s, CPU time=68.7620 s, Time Ratio=2.1058
+Physical time=144.9000 s, CPU time=68.8090 s, Time Ratio=2.1058
+Physical time=145.0000 s, CPU time=68.8550 s, Time Ratio=2.1059
+Physical time=145.1000 s, CPU time=68.9020 s, Time Ratio=2.1059
+Physical time=145.2000 s, CPU time=68.9490 s, Time Ratio=2.1059
+Physical time=145.3000 s, CPU time=68.9950 s, Time Ratio=2.1059
+Physical time=145.4000 s, CPU time=69.0420 s, Time Ratio=2.1060
+Physical time=145.5000 s, CPU time=69.0880 s, Time Ratio=2.1060
+Physical time=145.6000 s, CPU time=69.1350 s, Time Ratio=2.1060
+Physical time=145.7000 s, CPU time=69.1810 s, Time Ratio=2.1061
+Physical time=145.8000 s, CPU time=69.2280 s, Time Ratio=2.1061
+Physical time=145.9000 s, CPU time=69.2740 s, Time Ratio=2.1061
+Physical time=146.0000 s, CPU time=69.3200 s, Time Ratio=2.1062
+Physical time=146.1000 s, CPU time=69.3670 s, Time Ratio=2.1062
+Physical time=146.2000 s, CPU time=69.4130 s, Time Ratio=2.1062
+Physical time=146.3000 s, CPU time=69.4600 s, Time Ratio=2.1062
+Physical time=146.4000 s, CPU time=69.5060 s, Time Ratio=2.1063
+Physical time=146.5000 s, CPU time=69.5530 s, Time Ratio=2.1063
+Physical time=146.6000 s, CPU time=69.5990 s, Time Ratio=2.1064
+Physical time=146.7000 s, CPU time=69.6460 s, Time Ratio=2.1064
+Physical time=146.8000 s, CPU time=69.6940 s, Time Ratio=2.1064
+Physical time=146.9000 s, CPU time=69.7410 s, Time Ratio=2.1064
+Physical time=147.0000 s, CPU time=69.7880 s, Time Ratio=2.1064
+Physical time=147.1000 s, CPU time=69.8340 s, Time Ratio=2.1064
+Physical time=147.2000 s, CPU time=69.8810 s, Time Ratio=2.1064
+Physical time=147.3000 s, CPU time=69.9270 s, Time Ratio=2.1065
+Physical time=147.4000 s, CPU time=69.9740 s, Time Ratio=2.1065
+Physical time=147.5000 s, CPU time=70.0200 s, Time Ratio=2.1065
+Physical time=147.6000 s, CPU time=70.0670 s, Time Ratio=2.1066
+Physical time=147.7000 s, CPU time=70.1140 s, Time Ratio=2.1066
+Physical time=147.8000 s, CPU time=70.1600 s, Time Ratio=2.1066
+Physical time=147.9000 s, CPU time=70.2070 s, Time Ratio=2.1066
+Physical time=148.0000 s, CPU time=70.2540 s, Time Ratio=2.1066
+Physical time=148.1000 s, CPU time=70.3000 s, Time Ratio=2.1067
+Physical time=148.2000 s, CPU time=70.3470 s, Time Ratio=2.1067
+Physical time=148.3000 s, CPU time=70.3940 s, Time Ratio=2.1067
+Physical time=148.4000 s, CPU time=70.4410 s, Time Ratio=2.1067
+Physical time=148.5000 s, CPU time=70.4870 s, Time Ratio=2.1068
+Physical time=148.6000 s, CPU time=70.5330 s, Time Ratio=2.1068
+Physical time=148.7000 s, CPU time=70.5800 s, Time Ratio=2.1068
+Physical time=148.8000 s, CPU time=70.6260 s, Time Ratio=2.1069
+Physical time=148.9000 s, CPU time=70.6730 s, Time Ratio=2.1069
+Physical time=149.0000 s, CPU time=70.7190 s, Time Ratio=2.1069
+Physical time=149.1000 s, CPU time=70.7660 s, Time Ratio=2.1069
+Physical time=149.2000 s, CPU time=70.8130 s, Time Ratio=2.1070
+Physical time=149.3000 s, CPU time=70.8590 s, Time Ratio=2.1070
+Physical time=149.4000 s, CPU time=70.9060 s, Time Ratio=2.1070
+Physical time=149.5000 s, CPU time=70.9520 s, Time Ratio=2.1071
+Physical time=149.6000 s, CPU time=70.9980 s, Time Ratio=2.1071
+Physical time=149.7000 s, CPU time=71.0440 s, Time Ratio=2.1071
+Physical time=149.8000 s, CPU time=71.0910 s, Time Ratio=2.1072
+Physical time=149.9000 s, CPU time=71.1370 s, Time Ratio=2.1072
+Physical time=150.0000 s, CPU time=71.1830 s, Time Ratio=2.1072
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=150.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=150.000000[s]
+	Averaged room temperature 12.851241[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.125193
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.393425[W]
+		East Wall: 1.924739[W]
+		South Wall: 6.908136[W]
+		North Wall: 7.913555[W]
+		Ceiling: 0.016037[W]
+		Floor: -71.782992[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.001241
+		Velocity: 0.552984
+ffd_solver(): Synchronized data at t=150.000000[s]
+
+Physical time=150.1000 s, CPU time=71.2450 s, Time Ratio=2.1068
+Physical time=150.2000 s, CPU time=71.2920 s, Time Ratio=2.1068
+Physical time=150.3000 s, CPU time=71.3390 s, Time Ratio=2.1068
+Physical time=150.4000 s, CPU time=71.3850 s, Time Ratio=2.1069
+Physical time=150.5000 s, CPU time=71.4310 s, Time Ratio=2.1069
+Physical time=150.6000 s, CPU time=71.4780 s, Time Ratio=2.1069
+Physical time=150.7000 s, CPU time=71.5240 s, Time Ratio=2.1070
+Physical time=150.8000 s, CPU time=71.5830 s, Time Ratio=2.1066
+Physical time=150.9000 s, CPU time=71.6290 s, Time Ratio=2.1067
+Physical time=151.0000 s, CPU time=71.6750 s, Time Ratio=2.1067
+Physical time=151.1000 s, CPU time=71.7210 s, Time Ratio=2.1068
+Physical time=151.2000 s, CPU time=71.7680 s, Time Ratio=2.1068
+Physical time=151.3000 s, CPU time=71.8160 s, Time Ratio=2.1068
+Physical time=151.4000 s, CPU time=71.8620 s, Time Ratio=2.1068
+Physical time=151.5000 s, CPU time=71.9090 s, Time Ratio=2.1068
+Physical time=151.6000 s, CPU time=71.9550 s, Time Ratio=2.1069
+Physical time=151.7000 s, CPU time=72.0010 s, Time Ratio=2.1069
+Physical time=151.8000 s, CPU time=72.0480 s, Time Ratio=2.1069
+Physical time=151.9000 s, CPU time=72.0950 s, Time Ratio=2.1069
+Physical time=152.0000 s, CPU time=72.1410 s, Time Ratio=2.1070
+Physical time=152.1000 s, CPU time=72.1880 s, Time Ratio=2.1070
+Physical time=152.2000 s, CPU time=72.2360 s, Time Ratio=2.1070
+Physical time=152.3000 s, CPU time=72.2820 s, Time Ratio=2.1070
+Physical time=152.4000 s, CPU time=72.3290 s, Time Ratio=2.1070
+Physical time=152.5000 s, CPU time=72.3750 s, Time Ratio=2.1071
+Physical time=152.6000 s, CPU time=72.4210 s, Time Ratio=2.1071
+Physical time=152.7000 s, CPU time=72.4680 s, Time Ratio=2.1071
+Physical time=152.8000 s, CPU time=72.5150 s, Time Ratio=2.1072
+Physical time=152.9000 s, CPU time=72.5610 s, Time Ratio=2.1072
+Physical time=153.0000 s, CPU time=72.6090 s, Time Ratio=2.1072
+Physical time=153.1000 s, CPU time=72.6550 s, Time Ratio=2.1072
+Physical time=153.2000 s, CPU time=72.7020 s, Time Ratio=2.1072
+Physical time=153.3000 s, CPU time=72.7480 s, Time Ratio=2.1073
+Physical time=153.4000 s, CPU time=72.7950 s, Time Ratio=2.1073
+Physical time=153.5000 s, CPU time=72.8410 s, Time Ratio=2.1073
+Physical time=153.6000 s, CPU time=72.8880 s, Time Ratio=2.1073
+Physical time=153.7000 s, CPU time=72.9340 s, Time Ratio=2.1074
+Physical time=153.8000 s, CPU time=72.9810 s, Time Ratio=2.1074
+Physical time=153.9000 s, CPU time=73.0270 s, Time Ratio=2.1074
+Physical time=154.0000 s, CPU time=73.0740 s, Time Ratio=2.1075
+Physical time=154.1000 s, CPU time=73.1200 s, Time Ratio=2.1075
+Physical time=154.2000 s, CPU time=73.1670 s, Time Ratio=2.1075
+Physical time=154.3000 s, CPU time=73.2140 s, Time Ratio=2.1075
+Physical time=154.4000 s, CPU time=73.2600 s, Time Ratio=2.1076
+Physical time=154.5000 s, CPU time=73.3070 s, Time Ratio=2.1076
+Physical time=154.6000 s, CPU time=73.3530 s, Time Ratio=2.1076
+Physical time=154.7000 s, CPU time=73.4000 s, Time Ratio=2.1076
+Physical time=154.8000 s, CPU time=73.4850 s, Time Ratio=2.1066
+Physical time=154.9000 s, CPU time=73.5310 s, Time Ratio=2.1066
+Physical time=155.0000 s, CPU time=73.5770 s, Time Ratio=2.1066
+Physical time=155.1000 s, CPU time=73.6240 s, Time Ratio=2.1067
+Physical time=155.2000 s, CPU time=73.6700 s, Time Ratio=2.1067
+Physical time=155.3000 s, CPU time=73.7170 s, Time Ratio=2.1067
+Physical time=155.4000 s, CPU time=73.7630 s, Time Ratio=2.1067
+Physical time=155.5000 s, CPU time=73.8090 s, Time Ratio=2.1068
+Physical time=155.6000 s, CPU time=73.8560 s, Time Ratio=2.1068
+Physical time=155.7000 s, CPU time=73.9030 s, Time Ratio=2.1068
+Physical time=155.8000 s, CPU time=73.9490 s, Time Ratio=2.1069
+Physical time=155.9000 s, CPU time=73.9950 s, Time Ratio=2.1069
+Physical time=156.0000 s, CPU time=74.0410 s, Time Ratio=2.1069
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=156.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=156.000000[s]
+	Averaged room temperature 12.616508[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.116847
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.526062[W]
+		East Wall: 3.701418[W]
+		South Wall: 7.061935[W]
+		North Wall: 7.978396[W]
+		Ceiling: 0.013812[W]
+		Floor: -71.442444[W]
+	Sensor Information:
+		Occupied zone air temperature: 285.766508
+		Velocity: 0.663701
+ffd_solver(): Synchronized data at t=156.000000[s]
+
+Physical time=156.1000 s, CPU time=74.1050 s, Time Ratio=2.1065
+Physical time=156.2000 s, CPU time=74.1510 s, Time Ratio=2.1065
+Physical time=156.3000 s, CPU time=74.1980 s, Time Ratio=2.1065
+Physical time=156.4000 s, CPU time=74.2450 s, Time Ratio=2.1065
+Physical time=156.5000 s, CPU time=74.2920 s, Time Ratio=2.1066
+Physical time=156.6000 s, CPU time=74.3400 s, Time Ratio=2.1065
+Physical time=156.7000 s, CPU time=74.3860 s, Time Ratio=2.1066
+Physical time=156.8000 s, CPU time=74.4330 s, Time Ratio=2.1066
+Physical time=156.9000 s, CPU time=74.4790 s, Time Ratio=2.1066
+Physical time=157.0000 s, CPU time=74.5250 s, Time Ratio=2.1067
+Physical time=157.1000 s, CPU time=74.5720 s, Time Ratio=2.1067
+Physical time=157.2000 s, CPU time=74.6180 s, Time Ratio=2.1067
+Physical time=157.3000 s, CPU time=74.6640 s, Time Ratio=2.1068
+Physical time=157.4000 s, CPU time=74.7110 s, Time Ratio=2.1068
+Physical time=157.5000 s, CPU time=74.7570 s, Time Ratio=2.1068
+Physical time=157.6000 s, CPU time=74.8040 s, Time Ratio=2.1068
+Physical time=157.7000 s, CPU time=74.8500 s, Time Ratio=2.1069
+Physical time=157.8000 s, CPU time=74.8970 s, Time Ratio=2.1069
+Physical time=157.9000 s, CPU time=74.9440 s, Time Ratio=2.1069
+Physical time=158.0000 s, CPU time=74.9910 s, Time Ratio=2.1069
+Physical time=158.1000 s, CPU time=75.0380 s, Time Ratio=2.1069
+Physical time=158.2000 s, CPU time=75.0840 s, Time Ratio=2.1070
+Physical time=158.3000 s, CPU time=75.1310 s, Time Ratio=2.1070
+Physical time=158.4000 s, CPU time=75.1770 s, Time Ratio=2.1070
+Physical time=158.5000 s, CPU time=75.2240 s, Time Ratio=2.1070
+Physical time=158.6000 s, CPU time=75.2700 s, Time Ratio=2.1071
+Physical time=158.7000 s, CPU time=75.3170 s, Time Ratio=2.1071
+Physical time=158.8000 s, CPU time=75.3640 s, Time Ratio=2.1071
+Physical time=158.9000 s, CPU time=75.4100 s, Time Ratio=2.1071
+Physical time=159.0000 s, CPU time=75.4570 s, Time Ratio=2.1072
+Physical time=159.1000 s, CPU time=75.5030 s, Time Ratio=2.1072
+Physical time=159.2000 s, CPU time=75.5500 s, Time Ratio=2.1072
+Physical time=159.3000 s, CPU time=75.5970 s, Time Ratio=2.1072
+Physical time=159.4000 s, CPU time=75.6430 s, Time Ratio=2.1073
+Physical time=159.5000 s, CPU time=75.6900 s, Time Ratio=2.1073
+Physical time=159.6000 s, CPU time=75.7360 s, Time Ratio=2.1073
+Physical time=159.7000 s, CPU time=75.7830 s, Time Ratio=2.1073
+Physical time=159.8000 s, CPU time=75.8290 s, Time Ratio=2.1074
+Physical time=159.9000 s, CPU time=75.8760 s, Time Ratio=2.1074
+Physical time=160.0000 s, CPU time=75.9220 s, Time Ratio=2.1074
+Physical time=160.1000 s, CPU time=75.9690 s, Time Ratio=2.1074
+Physical time=160.2000 s, CPU time=76.0160 s, Time Ratio=2.1075
+Physical time=160.3000 s, CPU time=76.0620 s, Time Ratio=2.1075
+Physical time=160.4000 s, CPU time=76.1090 s, Time Ratio=2.1075
+Physical time=160.5000 s, CPU time=76.1560 s, Time Ratio=2.1075
+Physical time=160.6000 s, CPU time=76.2020 s, Time Ratio=2.1076
+Physical time=160.7000 s, CPU time=76.2490 s, Time Ratio=2.1076
+Physical time=160.8000 s, CPU time=76.2950 s, Time Ratio=2.1076
+Physical time=160.9000 s, CPU time=76.3420 s, Time Ratio=2.1076
+Physical time=161.0000 s, CPU time=76.3880 s, Time Ratio=2.1077
+Physical time=161.1000 s, CPU time=76.4340 s, Time Ratio=2.1077
+Physical time=161.2000 s, CPU time=76.4810 s, Time Ratio=2.1077
+Physical time=161.3000 s, CPU time=76.5270 s, Time Ratio=2.1078
+Physical time=161.4000 s, CPU time=76.5740 s, Time Ratio=2.1078
+Physical time=161.5000 s, CPU time=76.6200 s, Time Ratio=2.1078
+Physical time=161.6000 s, CPU time=76.6670 s, Time Ratio=2.1078
+Physical time=161.7000 s, CPU time=76.7130 s, Time Ratio=2.1079
+Physical time=161.8000 s, CPU time=76.7590 s, Time Ratio=2.1079
+Physical time=161.9000 s, CPU time=76.8050 s, Time Ratio=2.1079
+Physical time=162.0000 s, CPU time=76.8520 s, Time Ratio=2.1079
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=162.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=162.000000[s]
+	Averaged room temperature 12.795563[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.089776
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.153964[W]
+		East Wall: 2.547977[W]
+		South Wall: 6.678340[W]
+		North Wall: 8.004433[W]
+		Ceiling: 0.021987[W]
+		Floor: -71.645542[W]
+	Sensor Information:
+		Occupied zone air temperature: 285.945563
+		Velocity: 0.634104
+ffd_solver(): Synchronized data at t=162.000000[s]
+
+Physical time=162.1000 s, CPU time=76.9130 s, Time Ratio=2.1076
+Physical time=162.2000 s, CPU time=76.9610 s, Time Ratio=2.1076
+Physical time=162.3000 s, CPU time=77.0070 s, Time Ratio=2.1076
+Physical time=162.4000 s, CPU time=77.0530 s, Time Ratio=2.1076
+Physical time=162.5000 s, CPU time=77.1000 s, Time Ratio=2.1077
+Physical time=162.6000 s, CPU time=77.1470 s, Time Ratio=2.1077
+Physical time=162.7000 s, CPU time=77.1940 s, Time Ratio=2.1077
+Physical time=162.8000 s, CPU time=77.2400 s, Time Ratio=2.1077
+Physical time=162.9000 s, CPU time=77.2860 s, Time Ratio=2.1078
+Physical time=163.0000 s, CPU time=77.3320 s, Time Ratio=2.1078
+Physical time=163.1000 s, CPU time=77.3810 s, Time Ratio=2.1078
+Physical time=163.2000 s, CPU time=77.4280 s, Time Ratio=2.1078
+Physical time=163.3000 s, CPU time=77.4740 s, Time Ratio=2.1078
+Physical time=163.4000 s, CPU time=77.5210 s, Time Ratio=2.1078
+Physical time=163.5000 s, CPU time=77.5670 s, Time Ratio=2.1079
+Physical time=163.6000 s, CPU time=77.6140 s, Time Ratio=2.1079
+Physical time=163.7000 s, CPU time=77.6600 s, Time Ratio=2.1079
+Physical time=163.8000 s, CPU time=77.7070 s, Time Ratio=2.1079
+Physical time=163.9000 s, CPU time=77.7540 s, Time Ratio=2.1079
+Physical time=164.0000 s, CPU time=77.8000 s, Time Ratio=2.1080
+Physical time=164.1000 s, CPU time=77.8470 s, Time Ratio=2.1080
+Physical time=164.2000 s, CPU time=77.8940 s, Time Ratio=2.1080
+Physical time=164.3000 s, CPU time=77.9410 s, Time Ratio=2.1080
+Physical time=164.4000 s, CPU time=77.9880 s, Time Ratio=2.1080
+Physical time=164.5000 s, CPU time=78.0350 s, Time Ratio=2.1080
+Physical time=164.6000 s, CPU time=78.0820 s, Time Ratio=2.1080
+Physical time=164.7000 s, CPU time=78.1280 s, Time Ratio=2.1081
+Physical time=164.8000 s, CPU time=78.1750 s, Time Ratio=2.1081
+Physical time=164.9000 s, CPU time=78.2210 s, Time Ratio=2.1081
+Physical time=165.0000 s, CPU time=78.2680 s, Time Ratio=2.1081
+Physical time=165.1000 s, CPU time=78.3140 s, Time Ratio=2.1082
+Physical time=165.2000 s, CPU time=78.3610 s, Time Ratio=2.1082
+Physical time=165.3000 s, CPU time=78.4070 s, Time Ratio=2.1082
+Physical time=165.4000 s, CPU time=78.4540 s, Time Ratio=2.1082
+Physical time=165.5000 s, CPU time=78.5000 s, Time Ratio=2.1083
+Physical time=165.6000 s, CPU time=78.5470 s, Time Ratio=2.1083
+Physical time=165.7000 s, CPU time=78.5930 s, Time Ratio=2.1083
+Physical time=165.8000 s, CPU time=78.6400 s, Time Ratio=2.1083
+Physical time=165.9000 s, CPU time=78.6860 s, Time Ratio=2.1084
+Physical time=166.0000 s, CPU time=78.7330 s, Time Ratio=2.1084
+Physical time=166.1000 s, CPU time=78.7800 s, Time Ratio=2.1084
+Physical time=166.2000 s, CPU time=78.8260 s, Time Ratio=2.1084
+Physical time=166.3000 s, CPU time=78.8730 s, Time Ratio=2.1085
+Physical time=166.4000 s, CPU time=78.9190 s, Time Ratio=2.1085
+Physical time=166.5000 s, CPU time=78.9660 s, Time Ratio=2.1085
+Physical time=166.6000 s, CPU time=79.0130 s, Time Ratio=2.1085
+Physical time=166.7000 s, CPU time=79.0600 s, Time Ratio=2.1085
+Physical time=166.8000 s, CPU time=79.1070 s, Time Ratio=2.1085
+Physical time=166.9000 s, CPU time=79.1530 s, Time Ratio=2.1086
+Physical time=167.0000 s, CPU time=79.2000 s, Time Ratio=2.1086
+Physical time=167.1000 s, CPU time=79.2460 s, Time Ratio=2.1086
+Physical time=167.2000 s, CPU time=79.2920 s, Time Ratio=2.1087
+Physical time=167.3000 s, CPU time=79.3390 s, Time Ratio=2.1087
+Physical time=167.4000 s, CPU time=79.5230 s, Time Ratio=2.1051
+Physical time=167.5000 s, CPU time=79.5700 s, Time Ratio=2.1051
+Physical time=167.6000 s, CPU time=79.6160 s, Time Ratio=2.1051
+Physical time=167.7000 s, CPU time=79.6630 s, Time Ratio=2.1051
+Physical time=167.8000 s, CPU time=79.7090 s, Time Ratio=2.1052
+Physical time=167.9000 s, CPU time=79.7550 s, Time Ratio=2.1052
+Physical time=168.0000 s, CPU time=79.8020 s, Time Ratio=2.1052
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=168.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=168.000000[s]
+	Averaged room temperature 12.781725[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.130740
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 6.672226[W]
+		East Wall: 4.014248[W]
+		South Wall: 6.512765[W]
+		North Wall: 7.931104[W]
+		Ceiling: 0.029363[W]
+		Floor: -71.243958[W]
+	Sensor Information:
+		Occupied zone air temperature: 285.931725
+		Velocity: 0.705616
+ffd_solver(): Synchronized data at t=168.000000[s]
+
+Physical time=168.1000 s, CPU time=79.8630 s, Time Ratio=2.1049
+Physical time=168.2000 s, CPU time=79.9090 s, Time Ratio=2.1049
+Physical time=168.3000 s, CPU time=79.9560 s, Time Ratio=2.1049
+Physical time=168.4000 s, CPU time=80.0020 s, Time Ratio=2.1049
+Physical time=168.5000 s, CPU time=80.0490 s, Time Ratio=2.1050
+Physical time=168.6000 s, CPU time=80.0960 s, Time Ratio=2.1050
+Physical time=168.7000 s, CPU time=80.1420 s, Time Ratio=2.1050
+Physical time=168.8000 s, CPU time=80.1890 s, Time Ratio=2.1050
+Physical time=168.9000 s, CPU time=80.2360 s, Time Ratio=2.1050
+Physical time=169.0000 s, CPU time=80.2820 s, Time Ratio=2.1051
+Physical time=169.1000 s, CPU time=80.3290 s, Time Ratio=2.1051
+Physical time=169.2000 s, CPU time=80.3750 s, Time Ratio=2.1051
+Physical time=169.3000 s, CPU time=80.4220 s, Time Ratio=2.1051
+Physical time=169.4000 s, CPU time=80.4680 s, Time Ratio=2.1052
+Physical time=169.5000 s, CPU time=80.5160 s, Time Ratio=2.1052
+Physical time=169.6000 s, CPU time=80.5630 s, Time Ratio=2.1052
+Physical time=169.7000 s, CPU time=80.6100 s, Time Ratio=2.1052
+Physical time=169.8000 s, CPU time=80.6560 s, Time Ratio=2.1052
+Physical time=169.9000 s, CPU time=80.7030 s, Time Ratio=2.1053
+Physical time=170.0000 s, CPU time=80.7490 s, Time Ratio=2.1053
+Physical time=170.1000 s, CPU time=80.7950 s, Time Ratio=2.1053
+Physical time=170.2000 s, CPU time=80.8420 s, Time Ratio=2.1053
+Physical time=170.3000 s, CPU time=80.8880 s, Time Ratio=2.1054
+Physical time=170.4000 s, CPU time=80.9350 s, Time Ratio=2.1054
+Physical time=170.5000 s, CPU time=80.9810 s, Time Ratio=2.1054
+Physical time=170.6000 s, CPU time=81.0280 s, Time Ratio=2.1054
+Physical time=170.7000 s, CPU time=81.0750 s, Time Ratio=2.1055
+Physical time=170.8000 s, CPU time=81.1210 s, Time Ratio=2.1055
+Physical time=170.9000 s, CPU time=81.1670 s, Time Ratio=2.1055
+Physical time=171.0000 s, CPU time=81.2140 s, Time Ratio=2.1055
+Physical time=171.1000 s, CPU time=81.2600 s, Time Ratio=2.1056
+Physical time=171.2000 s, CPU time=81.3060 s, Time Ratio=2.1056
+Physical time=171.3000 s, CPU time=81.3530 s, Time Ratio=2.1056
+Physical time=171.4000 s, CPU time=81.3990 s, Time Ratio=2.1057
+Physical time=171.5000 s, CPU time=81.4460 s, Time Ratio=2.1057
+Physical time=171.6000 s, CPU time=81.4930 s, Time Ratio=2.1057
+Physical time=171.7000 s, CPU time=81.5390 s, Time Ratio=2.1057
+Physical time=171.8000 s, CPU time=81.5850 s, Time Ratio=2.1058
+Physical time=171.9000 s, CPU time=81.6310 s, Time Ratio=2.1058
+Physical time=172.0000 s, CPU time=81.6780 s, Time Ratio=2.1058
+Physical time=172.1000 s, CPU time=81.7240 s, Time Ratio=2.1059
+Physical time=172.2000 s, CPU time=81.7700 s, Time Ratio=2.1059
+Physical time=172.3000 s, CPU time=81.8160 s, Time Ratio=2.1059
+Physical time=172.4000 s, CPU time=81.8630 s, Time Ratio=2.1060
+Physical time=172.5000 s, CPU time=81.9090 s, Time Ratio=2.1060
+Physical time=172.6000 s, CPU time=81.9550 s, Time Ratio=2.1060
+Physical time=172.7000 s, CPU time=82.0020 s, Time Ratio=2.1060
+Physical time=172.8000 s, CPU time=82.0490 s, Time Ratio=2.1061
+Physical time=172.9000 s, CPU time=82.0950 s, Time Ratio=2.1061
+Physical time=173.0000 s, CPU time=82.1410 s, Time Ratio=2.1061
+Physical time=173.1000 s, CPU time=82.1870 s, Time Ratio=2.1062
+Physical time=173.2000 s, CPU time=82.2330 s, Time Ratio=2.1062
+Physical time=173.3000 s, CPU time=82.2790 s, Time Ratio=2.1062
+Physical time=173.4000 s, CPU time=82.3250 s, Time Ratio=2.1063
+Physical time=173.5000 s, CPU time=82.3710 s, Time Ratio=2.1063
+Physical time=173.6000 s, CPU time=82.4170 s, Time Ratio=2.1064
+Physical time=173.7000 s, CPU time=82.4630 s, Time Ratio=2.1064
+Physical time=173.8000 s, CPU time=82.5100 s, Time Ratio=2.1064
+Physical time=173.9000 s, CPU time=82.5570 s, Time Ratio=2.1064
+Physical time=174.0000 s, CPU time=82.6030 s, Time Ratio=2.1065
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=174.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=174.000000[s]
+	Averaged room temperature 13.698812[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.259324
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.116752[W]
+		East Wall: 5.625706[W]
+		South Wall: 6.551063[W]
+		North Wall: 7.567602[W]
+		Ceiling: 7.459688[W]
+		Floor: -71.550905[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.848812
+		Velocity: 0.652584
+ffd_solver(): Synchronized data at t=174.000000[s]
+
+Physical time=174.1000 s, CPU time=82.6650 s, Time Ratio=2.1061
+Physical time=174.2000 s, CPU time=82.7120 s, Time Ratio=2.1061
+Physical time=174.3000 s, CPU time=82.7580 s, Time Ratio=2.1061
+Physical time=174.4000 s, CPU time=82.8040 s, Time Ratio=2.1062
+Physical time=174.5000 s, CPU time=82.8500 s, Time Ratio=2.1062
+Physical time=174.6000 s, CPU time=82.8970 s, Time Ratio=2.1062
+Physical time=174.7000 s, CPU time=82.9430 s, Time Ratio=2.1063
+Physical time=174.8000 s, CPU time=82.9900 s, Time Ratio=2.1063
+Physical time=174.9000 s, CPU time=83.0360 s, Time Ratio=2.1063
+Physical time=175.0000 s, CPU time=83.0830 s, Time Ratio=2.1063
+Physical time=175.1000 s, CPU time=83.1300 s, Time Ratio=2.1063
+Physical time=175.2000 s, CPU time=83.1760 s, Time Ratio=2.1064
+Physical time=175.3000 s, CPU time=83.2230 s, Time Ratio=2.1064
+Physical time=175.4000 s, CPU time=83.2690 s, Time Ratio=2.1064
+Physical time=175.5000 s, CPU time=83.3150 s, Time Ratio=2.1065
+Physical time=175.6000 s, CPU time=83.3620 s, Time Ratio=2.1065
+Physical time=175.7000 s, CPU time=83.4080 s, Time Ratio=2.1065
+Physical time=175.8000 s, CPU time=83.4540 s, Time Ratio=2.1065
+Physical time=175.9000 s, CPU time=83.5010 s, Time Ratio=2.1066
+Physical time=176.0000 s, CPU time=83.5470 s, Time Ratio=2.1066
+Physical time=176.1000 s, CPU time=83.5960 s, Time Ratio=2.1066
+Physical time=176.2000 s, CPU time=83.6430 s, Time Ratio=2.1066
+Physical time=176.3000 s, CPU time=83.6890 s, Time Ratio=2.1066
+Physical time=176.4000 s, CPU time=83.7360 s, Time Ratio=2.1066
+Physical time=176.5000 s, CPU time=83.7830 s, Time Ratio=2.1066
+Physical time=176.6000 s, CPU time=83.8290 s, Time Ratio=2.1067
+Physical time=176.7000 s, CPU time=83.8750 s, Time Ratio=2.1067
+Physical time=176.8000 s, CPU time=83.9210 s, Time Ratio=2.1067
+Physical time=176.9000 s, CPU time=83.9680 s, Time Ratio=2.1068
+Physical time=177.0000 s, CPU time=84.0140 s, Time Ratio=2.1068
+Physical time=177.1000 s, CPU time=84.0610 s, Time Ratio=2.1068
+Physical time=177.2000 s, CPU time=84.1080 s, Time Ratio=2.1068
+Physical time=177.3000 s, CPU time=84.1540 s, Time Ratio=2.1069
+Physical time=177.4000 s, CPU time=84.2010 s, Time Ratio=2.1069
+Physical time=177.5000 s, CPU time=84.2470 s, Time Ratio=2.1069
+Physical time=177.6000 s, CPU time=84.2930 s, Time Ratio=2.1069
+Physical time=177.7000 s, CPU time=84.3400 s, Time Ratio=2.1069
+Physical time=177.8000 s, CPU time=84.3870 s, Time Ratio=2.1070
+Physical time=177.9000 s, CPU time=84.4330 s, Time Ratio=2.1070
+Physical time=178.0000 s, CPU time=84.4790 s, Time Ratio=2.1070
+Physical time=178.1000 s, CPU time=84.5260 s, Time Ratio=2.1070
+Physical time=178.2000 s, CPU time=84.5730 s, Time Ratio=2.1071
+Physical time=178.3000 s, CPU time=84.6190 s, Time Ratio=2.1071
+Physical time=178.4000 s, CPU time=84.6650 s, Time Ratio=2.1071
+Physical time=178.5000 s, CPU time=84.7120 s, Time Ratio=2.1071
+Physical time=178.6000 s, CPU time=84.7580 s, Time Ratio=2.1072
+Physical time=178.7000 s, CPU time=84.8040 s, Time Ratio=2.1072
+Physical time=178.8000 s, CPU time=84.8500 s, Time Ratio=2.1072
+Physical time=178.9000 s, CPU time=84.8970 s, Time Ratio=2.1073
+Physical time=179.0000 s, CPU time=84.9430 s, Time Ratio=2.1073
+Physical time=179.1000 s, CPU time=84.9900 s, Time Ratio=2.1073
+Physical time=179.2000 s, CPU time=85.0370 s, Time Ratio=2.1073
+Physical time=179.3000 s, CPU time=85.0830 s, Time Ratio=2.1074
+Physical time=179.4000 s, CPU time=85.1300 s, Time Ratio=2.1074
+Physical time=179.5000 s, CPU time=85.1770 s, Time Ratio=2.1074
+Physical time=179.6000 s, CPU time=85.2230 s, Time Ratio=2.1074
+Physical time=179.7000 s, CPU time=85.2700 s, Time Ratio=2.1074
+Physical time=179.8000 s, CPU time=85.3160 s, Time Ratio=2.1075
+Physical time=179.9000 s, CPU time=85.3630 s, Time Ratio=2.1075
+Physical time=180.0000 s, CPU time=85.4100 s, Time Ratio=2.1075
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=180.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=180.000000[s]
+	Averaged room temperature 13.784316[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.364250
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.312441[W]
+		East Wall: 4.607412[W]
+		South Wall: 7.328573[W]
+		North Wall: 8.470715[W]
+		Ceiling: 0.582812[W]
+		Floor: -71.652745[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.934316
+		Velocity: 0.694491
+ffd_solver(): Synchronized data at t=180.000000[s]
+
+Physical time=180.1000 s, CPU time=85.4730 s, Time Ratio=2.1071
+Physical time=180.2000 s, CPU time=85.5190 s, Time Ratio=2.1071
+Physical time=180.3000 s, CPU time=85.5660 s, Time Ratio=2.1071
+Physical time=180.4000 s, CPU time=85.6120 s, Time Ratio=2.1072
+Physical time=180.5000 s, CPU time=85.6580 s, Time Ratio=2.1072
+Physical time=180.6000 s, CPU time=85.7040 s, Time Ratio=2.1073
+Physical time=180.7000 s, CPU time=85.7510 s, Time Ratio=2.1073
+Physical time=180.8000 s, CPU time=85.7970 s, Time Ratio=2.1073
+Physical time=180.9000 s, CPU time=85.8430 s, Time Ratio=2.1073
+Physical time=181.0000 s, CPU time=85.8900 s, Time Ratio=2.1073
+Physical time=181.1000 s, CPU time=85.9360 s, Time Ratio=2.1074
+Physical time=181.2000 s, CPU time=85.9830 s, Time Ratio=2.1074
+Physical time=181.3000 s, CPU time=86.0290 s, Time Ratio=2.1074
+Physical time=181.4000 s, CPU time=86.0760 s, Time Ratio=2.1074
+Physical time=181.5000 s, CPU time=86.1220 s, Time Ratio=2.1075
+Physical time=181.6000 s, CPU time=86.1690 s, Time Ratio=2.1075
+Physical time=181.7000 s, CPU time=86.2160 s, Time Ratio=2.1075
+Physical time=181.8000 s, CPU time=86.2620 s, Time Ratio=2.1075
+Physical time=181.9000 s, CPU time=86.3090 s, Time Ratio=2.1075
+Physical time=182.0000 s, CPU time=86.3550 s, Time Ratio=2.1076
+Physical time=182.1000 s, CPU time=86.4010 s, Time Ratio=2.1076
+Physical time=182.2000 s, CPU time=86.4480 s, Time Ratio=2.1076
+Physical time=182.3000 s, CPU time=86.4940 s, Time Ratio=2.1077
+Physical time=182.4000 s, CPU time=86.5410 s, Time Ratio=2.1077
+Physical time=182.5000 s, CPU time=86.5870 s, Time Ratio=2.1077
+Physical time=182.6000 s, CPU time=86.6340 s, Time Ratio=2.1077
+Physical time=182.7000 s, CPU time=86.6800 s, Time Ratio=2.1078
+Physical time=182.8000 s, CPU time=86.7270 s, Time Ratio=2.1078
+Physical time=182.9000 s, CPU time=86.7730 s, Time Ratio=2.1078
+Physical time=183.0000 s, CPU time=86.8190 s, Time Ratio=2.1078
+Physical time=183.1000 s, CPU time=86.8660 s, Time Ratio=2.1078
+Physical time=183.2000 s, CPU time=86.9120 s, Time Ratio=2.1079
+Physical time=183.3000 s, CPU time=86.9580 s, Time Ratio=2.1079
+Physical time=183.4000 s, CPU time=87.0050 s, Time Ratio=2.1079
+Physical time=183.5000 s, CPU time=87.0520 s, Time Ratio=2.1079
+Physical time=183.6000 s, CPU time=87.0990 s, Time Ratio=2.1079
+Physical time=183.7000 s, CPU time=87.1450 s, Time Ratio=2.1080
+Physical time=183.8000 s, CPU time=87.1920 s, Time Ratio=2.1080
+Physical time=183.9000 s, CPU time=87.2380 s, Time Ratio=2.1080
+Physical time=184.0000 s, CPU time=87.2850 s, Time Ratio=2.1080
+Physical time=184.1000 s, CPU time=87.3310 s, Time Ratio=2.1081
+Physical time=184.2000 s, CPU time=87.3780 s, Time Ratio=2.1081
+Physical time=184.3000 s, CPU time=87.4240 s, Time Ratio=2.1081
+Physical time=184.4000 s, CPU time=87.4700 s, Time Ratio=2.1082
+Physical time=184.5000 s, CPU time=87.5160 s, Time Ratio=2.1082
+Physical time=184.6000 s, CPU time=87.5640 s, Time Ratio=2.1082
+Physical time=184.7000 s, CPU time=87.6100 s, Time Ratio=2.1082
+Physical time=184.8000 s, CPU time=87.6570 s, Time Ratio=2.1082
+Physical time=184.9000 s, CPU time=87.7030 s, Time Ratio=2.1083
+Physical time=185.0000 s, CPU time=87.7500 s, Time Ratio=2.1083
+Physical time=185.1000 s, CPU time=87.7960 s, Time Ratio=2.1083
+Physical time=185.2000 s, CPU time=87.8430 s, Time Ratio=2.1083
+Physical time=185.3000 s, CPU time=87.9040 s, Time Ratio=2.1080
+Physical time=185.4000 s, CPU time=88.0740 s, Time Ratio=2.1050
+Physical time=185.5000 s, CPU time=88.1210 s, Time Ratio=2.1051
+Physical time=185.6000 s, CPU time=88.1700 s, Time Ratio=2.1050
+Physical time=185.7000 s, CPU time=88.2170 s, Time Ratio=2.1050
+Physical time=185.8000 s, CPU time=88.2640 s, Time Ratio=2.1050
+Physical time=185.9000 s, CPU time=88.3100 s, Time Ratio=2.1051
+Physical time=186.0000 s, CPU time=88.3560 s, Time Ratio=2.1051
+-------------------------------------------------------------------
+read_cosim_data(): Start to read data from Modelica.
+read_cosim_data(): Received the following data at t=180.000000[s]
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West Wall: T=10.000000[degC]
+	East Wall: T=10.000000[degC]
+	South Wall: T=10.000000[degC]
+	North Wall: T=10.000000[degC]
+	Ceiling: T=10.000000[degC]
+	Floor: T=30.000000[degC]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+	No shading devices.
+assign_port_bc():
+	Inlet: vel=0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+	Outlet: vel=-0.833333[m/s], T=10.000000[degC]
+	Xi[0]=0.010000
+read_cosim_data(): Ended reading data from Modelica.
+-------------------------------------------------------------------
+write_cosim_parameter(): Start to write the following cosimulation data to Modelica:
+write_cosim_data(): Start to write FFD data to Modelica at t=186.000000[s]
+	Averaged room temperature 13.687641[degC]
+	Flow information at the ports:
+		Inlet: TPor[0]=273.150000
+		Inlet: Xi[0]=0.000000
+		Outlet: TPor[1]=286.298240
+		Outlet: Xi[0]=0.000000
+	Information at solid surfaces:
+		West Wall: 7.363608[W]
+		East Wall: 3.800662[W]
+		South Wall: 7.329171[W]
+		North Wall: 8.616197[W]
+		Ceiling: 1.201448[W]
+		Floor: -72.195613[W]
+	Sensor Information:
+		Occupied zone air temperature: 286.837641
+		Velocity: 0.658124
+ffd_solver(): Synchronized data at t=186.000000[s]
+
+WARNING in ffd_solver(): Received stop command from Modelica at FFD time: 186.000000[s], Modelica Time: 180.000000[s].
+write_unsteady(): Wrote the unsteady data file unsteady.plt.
+write_tecplot_data(): Wrote file result.plt.
+wrtie_SCI(): Wrote the SCI data file output.cfd.
+ffd(): Sent stopping signal to Modelica
+Successfully exit FFD.

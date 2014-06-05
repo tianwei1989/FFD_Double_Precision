@@ -285,28 +285,28 @@ void convert_to_tecplot_corners(PARA_DATA *para, REAL **var, REAL *psi) {
   int IMAX = imax+2, IJMAX = (imax+2)*(jmax+2);
 
   //West-South-Back
-  psi[IX(0,0,0)] = (psi[IX(0,1,0)] + psi[IX(1,0,0)] + psi[IX(0,0,1)]) / 3.0f;
+  psi[IX(0,0,0)] = (psi[IX(0,1,0)] + psi[IX(1,0,0)] + psi[IX(0,0,1)]) / (REAL) 3.0;
   //West-North-Back
   psi[IX(0,jmax+1,0)] = ( psi[IX(1,jmax+1,0)] + psi[IX(0,jmax,0)]
-                        + psi[IX(0,jmax+1,1)]) / 3.0f;
+                        + psi[IX(0,jmax+1,1)]) / (REAL) 3.0;
   //East-South-Back
   psi[IX(imax+1,0,0)] = ( psi[IX(imax,0,0)] + psi[IX(imax+1,1,0)]
-                        + psi[IX(imax+1,0,1)]) / 3.0f;
+                        + psi[IX(imax+1,0,1)]) / (REAL) 3.0;
   //East-North-Back
   psi[IX(imax+1,jmax+1,0)] = ( psi[IX(imax,jmax+1,0)] + psi[IX(imax+1,jmax,0)]
-                             + psi[IX(imax+1,jmax+1,1)]) / 3.0f;
+                             + psi[IX(imax+1,jmax+1,1)]) / (REAL) 3.0;
   //West-South-Front
   psi[IX(0,0,kmax+1)] = ( psi[IX(0,1,kmax+1)] + psi[IX(1,0,kmax+1)]
-                        + psi[IX(0,0,kmax)]) / 3.0f;  
+                        + psi[IX(0,0,kmax)]) / (REAL) 3.0;  
   //West-North-Front
   psi[IX(0,jmax+1,kmax+1)] = ( psi[IX(1,jmax+1,kmax+1)] + psi[IX(0,jmax,kmax+1)]
-                             + psi[IX(0,jmax+1,kmax)]) / 3.0f;
+                             + psi[IX(0,jmax+1,kmax)]) / (REAL) 3.0;
   //East-South-Front
   psi[IX(imax+1,0,kmax+1)] = ( psi[IX(imax,0,kmax+1)] + psi[IX(imax+1,1,kmax+1)]
-                             + psi[IX(imax+1,0,kmax)]) / 3.0f;
+                             + psi[IX(imax+1,0,kmax)]) / (REAL) 3.0;
   //Ease-North-Front
   psi[IX(imax+1,jmax+1,kmax+1)] = ( psi[IX(imax,jmax+1,0)] + psi[IX(imax+1,jmax,0)]
-                                  + psi[IX(imax+1,jmax+1,kmax)]) / 3.0f;
+                                  + psi[IX(imax+1,jmax+1,kmax)]) / (REAL) 3.0;
 } // End of convert_to_tecplot_corners()
 
 ///////////////////////////////////////////////////////////////////////////////

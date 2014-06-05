@@ -142,7 +142,7 @@ int coef_diff(PARA_DATA *para, REAL **var, REAL *psi, REAL *psi0,
       if(para->prob->tur_model==LAM)
         kapa = para->prob->nu; 
       else if(para->prob->tur_model==CONSTANT) 
-        kapa = 101.0f * para->prob->nu;
+        kapa = (REAL) 101.0 * para->prob->nu;
 
       FOR_U_CELL
         dxe = gx[IX(i+1,j  ,k)] - gx[IX(i  ,j,k)];
@@ -258,7 +258,7 @@ int coef_diff(PARA_DATA *para, REAL **var, REAL *psi, REAL *psi0,
 
       FOR_W_CELL
         ap[IX(i,j,k)] = ap0[IX(i,j,k)] + ae[IX(i,j,k)] + aw[IX(i,j,k)] 
-                      +  an[IX(i,j,k)] + as[IX(i,j,k)] + af[IX(i,j,k)] 
+                      + an[IX(i,j,k)] + as[IX(i,j,k)] + af[IX(i,j,k)] 
                       + ab[IX(i,j,k)];
       END_FOR
       break;

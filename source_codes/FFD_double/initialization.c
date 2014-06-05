@@ -165,7 +165,7 @@ int set_initial_data(PARA_DATA *para, REAL **var, int **BINDEX) {
     var[VXBC][i]    = 0.0;
     var[VYBC][i]    = 0.0;
     var[VZBC][i]    = 0.0;
-    var[TEMPBC][i]  = 0.0;;
+    var[TEMPBC][i]  = 0.0;
     var[QFLUXBC][i] = 0.0;
     var[QFLUX][i]   = 0.0;
     var[Xi1][i]     = 0.0;
